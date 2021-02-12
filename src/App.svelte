@@ -1,21 +1,32 @@
-
 <script>
-	import Header from "./components/header.svelte"
-	import Text from "./components/textblurb.svelte"
-	import Projects from "./components/projects.svelte"
+  import Header from "./components/header.svelte";
+  import Text from "./components/textblurb.svelte";
+  import Projects from "./components/projects.svelte";
+  import Footer from "./components/footer.svelte"
 </script>
 
-<Header/>
+<Header />
 <main role="main">
-	<Text/>
-	<Projects/>
+  <Text />
+  <Projects />
 </main>
 
+<Footer/>
+
 <style>
-	main {
-		display: grid;
-		place-items: center;
-		width: 75%;
-		padding: .25em;
-	}
+
+  * {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    background: transparent;
+  }
+
+  main {
+    display: grid;
+    place-items: center;
+  }
 </style>
