@@ -1,5 +1,5 @@
 <script>
-
+  import { onMount } from 'svelte'
 </script>
 
 <svelte:head>
