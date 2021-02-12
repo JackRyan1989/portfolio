@@ -4,9 +4,14 @@
 
 <section>
   <h2>About Me</h2>
-  <article>
-    {@html ABOUT}
-  </article>
+  <section>
+    {@html ABOUT.aboutme}
+  </section>
+  <section>
+        {@html ABOUT.contact.linkedin}
+        {@html ABOUT.contact.github}
+        {@html ABOUT.contact.protonmail}
+    </section>
 </section>
 
 <style>
@@ -14,4 +19,7 @@
         display: grid;
     }
 
+    a:hover {
+        text-decoration: none;
+    }
 </style>

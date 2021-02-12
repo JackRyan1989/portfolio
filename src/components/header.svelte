@@ -11,7 +11,7 @@
 </svelte:head>
 
 <header>
-  <h1>Jack Ryan</h1>
+  <h1>Hi.<span> I'm Jack.</span></h1>
 </header>
 
 <style>
@@ -27,14 +27,21 @@
   
   header {
     background-color: #FFF;
+    height: 100vh;
   }
 
   h1 {
     font-family: "Roboto", sans-serif;
     font-weight: 400;
     padding: 0.25em;
-    font-size: 10em;
+    font-size: 20em;
     -webkit-text-fill-color: transparent;
     -webkit-text-stroke: thin #000;
+    text-align: center;
   }
+
+  h1 span {
+    font-size: .5em;
+  }
+
 </style>

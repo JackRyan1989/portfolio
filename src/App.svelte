@@ -16,5 +16,6 @@
 		display: grid;
 		place-items: center;
 		width: 75%;
+		padding: .25em;
 	}
 </style>
