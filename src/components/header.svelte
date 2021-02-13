@@ -1,5 +1,14 @@
 <script>
-  import { onMount } from 'svelte'
+  let scrollPos = 10;
+  let makeSmall = false;
+
+  document.addEventListener("scroll", function (e) {
+    let newPos = window.scrollY;
+    if (newPos > scrollPos) {
+      makeSmall = true;
+    }
+  });
+
 </script>
 
 <svelte:head>
@@ -10,9 +19,10 @@
   />
 </svelte:head>
 
-<header>
-  <h1>Hi.<span> I'm Jack.</span></h1>
-</header>
+  <header class='{makeSmall ? "shrinko" : "expando"}'>
+    <h1 class='{makeSmall ? "shrink" : "expand"}'>Hi.<span> I'm Jack.</span></h1>
+  </header>
+
 
 <style>
   * {
@@ -20,28 +30,46 @@
     padding: 0;
     border: 0;
     outline: 0;
-    font-size: 100%;
     vertical-align: baseline;
     background: transparent;
   }
-  
+
   header {
-    background-color: #FFF;
+    background-color: #fff;
     height: 100vh;
+  }
+
+  .expando {
+    height: 100vh;
+  }
+
+  .expand {
+    font-size: 20em;
+    text-align: center;
+  }
+
+  .shrinko {
+    height: 10vh;
+    transition-property: height;
+    transition-duration: .1s; 
+  }
+
+  .shrink {
+    font-size: 2.5em;
+    text-align: left;
+    transition-property: font-size, text-align;
+    transition-duration: 0.5s, 0.5s; 
   }
 
   h1 {
     font-family: "Roboto", sans-serif;
     font-weight: 400;
     padding: 0.25em;
-    font-size: 20em;
     -webkit-text-fill-color: transparent;
     -webkit-text-stroke: thin #000;
-    text-align: center;
   }
 
   h1 span {
-    font-size: .5em;
+    font-size: 0.5em;
   }
-
 </style>
