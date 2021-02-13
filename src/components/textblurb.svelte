@@ -11,7 +11,7 @@
   <br/>
   <br/>
     This site serves as both a portfolio to demonstrate recent and not so recent past work and also a
-    sandbox for me to play in.
+    sandbox for me to play in. I also put in a little bit about my past life in cognitive-neuroscience research, because that was neat too.
   </p>
 </section>
 
