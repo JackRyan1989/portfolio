@@ -1,14 +1,6 @@
 <script>
-  let scrollPos = 10;
-  let makeSmall = false;
 
-  document.addEventListener("scroll", function (e) {
-    let newPos = window.scrollY;
-    if (newPos > scrollPos) {
-      makeSmall = true;
-    }
-  });
-
+  export let makeSmall;
 </script>
 
 <svelte:head>
@@ -19,10 +11,9 @@
   />
 </svelte:head>
 
-  <header class='{makeSmall ? "shrinko" : "expando"}'>
-    <h1 class='{makeSmall ? "shrink" : "expand"}'>Hi.<span> I'm Jack.</span></h1>
-  </header>
-
+<header class={makeSmall ? "shrinko" : "expando"}>
+  <h1 class={makeSmall ? "shrink" : "expand"}>Hi.<span> I'm Jack.</span></h1>
+</header>
 
 <style>
   * {
@@ -37,6 +28,8 @@
   header {
     background-color: #fff;
     height: 100vh;
+    opacity: 1;
+    z-index: 2;
   }
 
   .expando {
@@ -51,14 +44,14 @@
   .shrinko {
     height: 10vh;
     transition-property: height;
-    transition-duration: .1s; 
+    transition-duration: 0.1s;
   }
 
   .shrink {
     font-size: 2.5em;
     text-align: left;
     transition-property: font-size, text-align;
-    transition-duration: 0.5s, 0.5s; 
+    transition-duration: 0.5s, 0.5s;
   }
 
   h1 {

@@ -3,7 +3,6 @@
 
 <section>
   <div class="links">
-    <h2>Hit Me Up!</h2>
     <a href="https://www.linkedin.com/in/johnanthonyryan/" target="_blank"
       >LinkedIn</a
     >
@@ -15,7 +14,6 @@
 <style>
   section {
     display: grid;
-    border: solid lightgray 1px;
   }
 
   div.links {
@@ -27,8 +25,7 @@
 
   div.links a {
     padding: 0.5em;
-    margin: 0.5em;
-    min-height: 4em;
+    min-height: 1em;
     text-decoration: none;
     text-align: center;
     color: #000;
