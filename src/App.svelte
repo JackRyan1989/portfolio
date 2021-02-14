@@ -2,12 +2,10 @@
   import Header from "./components/header.svelte";
   import Text from "./components/textblurb.svelte";
   import Projects from "./components/projects.svelte";
-  import Contact from "./components/contact.svelte";
   import { onMount } from "svelte";
 
   let makeSmall = false;
   let setProjects = false;
-  let setContact = false;
   let setAbout = true;
   const delayedTextShrink = function () {
     makeSmall = true;
@@ -20,22 +18,14 @@
   });
 
   const onClickChangeView = function (setView) {
-    console.log("Clicked")
     switch (setView) {
       case "about":
         setAbout = true;
         setProjects = false;
-        setContact = false;
         break;
       case "projects":
         setAbout = false;
         setProjects = true;
-        setContact = false;
-        break;
-      case "contact":
-        setAbout = false;
-        setProjects = false;
-        setContact = true;
         break;
     }
   };
@@ -43,7 +33,7 @@
 
 <div class="wrapper">
   <div class="header">
-    <Header {makeSmall} />
+    <Header {makeSmall} onClickChangeView={onClickChangeView} />
   </div>
   <main class="content" role="main">
     {#if setAbout}
@@ -52,11 +42,7 @@
     </section>
     {:else if setProjects}
     <section name="projects" id="second">
-      <Projects onClickChangeView={onClickChangeView} />
-    </section>
-    {:else if setContact}
-    <section name="contact" id="third">
-      <Contact onClickChangeView={onClickChangeView} />
+      <Projects/>
     </section>
     {/if}
   </main>
@@ -91,9 +77,9 @@
     grid-row: 1 / 2;
   }
 
-  #first, #second, #third {
+  #first, #second {
     width: 75%;
-    margin: 25% 0px;
+    margin: 10% 0px;
   }
-  
+
 </style>

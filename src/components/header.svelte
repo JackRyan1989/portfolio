@@ -13,6 +13,10 @@
 
 <header class={makeSmall ? "shrinko" : "expando"}>
   <h1 class={makeSmall ? "shrink" : "expand"}>Hi.<span> I'm Jack.</span></h1>
+  <div class={makeSmall ? "links" : "no-links"}>
+    <button on:click={() => onClickChangeView("about")}>About</button>
+    <button on:click={() => onClickChangeView("projects")}>My Projects</button>
+  </div>
 </header>
 
 <style>
@@ -64,5 +68,29 @@
 
   h1 span {
     font-size: 0.5em;
+  }
+
+  .no-links {
+    display: none;
+    opacity: 0;
+  }
+
+  .links {
+    position: fixed;
+    top: 0;
+    right: 0;
+    margin: 2%;
+    display: block;
+    opacity: 1;
+    transition-property: opacity;
+    transition-duration: 0.5s;
+  }
+
+  .links button {
+    padding: 2%;
+  }
+
+  .links button:hover {
+    
   }
 </style>

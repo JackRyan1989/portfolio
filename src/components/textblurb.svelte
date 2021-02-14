@@ -1,5 +1,5 @@
 <script>
-  export let onClickChangeView = () => {};
+  import Contact from './contact.svelte'
 </script>
 
 <section>
@@ -19,9 +19,8 @@
       about my past life in cognitive-neuroscience research, because that was neat
       too.
     </p>
-    <div class="links">
-      <button on:click={() => onClickChangeView("projects")}>My Projects</button>
-      <button on:click={() => onClickChangeView("contact")}>Contact</button>
+    <div>
+      <Contact />
     </div>
   </article>
 </section>
@@ -40,15 +39,4 @@
     display: grid;
     padding: 0.25em 0.5em;
   }
-
-  .links {
-    padding: .5em 0;
-    display: flex;
-    flex-direction: row;
-  }
-  
-  .links button:nth-child(even) {
-    padding: 0 .5em;
-  }
-
 </style>

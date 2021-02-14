@@ -1,6 +1,5 @@
 <script>
   import PROJECTS from "../constants/projects";
-  export let onClickChangeView = () => {};
 </script>
 
 <section>
@@ -27,11 +26,6 @@
         <p>Hey something went wrong loading projects!</p>
       </div>
     {/each}
-    <div class="links">
-      <button on:click={() => onClickChangeView("about")}>About</button
-      >
-      <button on:click={() => onClickChangeView("contact")}>Contact</button>
-    </div>
   </article>
 </section>
 
@@ -111,15 +105,5 @@
 
   a:hover {
     text-decoration: none;
-  }
-
-  .links {
-    padding: 0.5em 0;
-    display: flex;
-    flex-direction: row;
-  }
-
-  .links button:nth-child(even) {
-    padding: 0 0.5em;
   }
 </style>
