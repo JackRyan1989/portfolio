@@ -9,46 +9,56 @@
   let setProjects = false;
   let setContact = false;
   let setAbout = true;
-  const delayedTextShrink = function() {
+  const delayedTextShrink = function () {
     makeSmall = true;
-  }
+  };
   onMount(() => {
     let timer = setTimeout(() => {
-      delayedTextShrink()
-    },
-      1500
-    );
-    return () => clearTimeout(timer)
+      delayedTextShrink();
+    }, 1500);
+    return () => clearTimeout(timer);
   });
 
-  const onClickAbout = function() {
-    setAbout = !setAbout;
-  }
-
-  const onClickProjects = function() {
-    setProjects = !setProjects;
-  }
-
-  const onClickContact = function() {
-    setContact = !setContact;
-  }
-
+  const onClickChangeView = function (setView) {
+    console.log("Clicked")
+    switch (setView) {
+      case "about":
+        setAbout = true;
+        setProjects = false;
+        setContact = false;
+        break;
+      case "projects":
+        setAbout = false;
+        setProjects = true;
+        setContact = false;
+        break;
+      case "contact":
+        setAbout = false;
+        setProjects = false;
+        setContact = true;
+        break;
+    }
+  };
 </script>
 
 <div class="wrapper">
   <div class="header">
-    <Header makeSmall={makeSmall} />
+    <Header {makeSmall} />
   </div>
   <main class="content" role="main">
+    {#if setAbout}
     <section name="text" id="first">
-      <Text />
+      <Text onClickChangeView={onClickChangeView}/>
     </section>
+    {:else if setProjects}
     <section name="projects" id="second">
-      <Projects />
+      <Projects onClickChangeView={onClickChangeView} />
     </section>
+    {:else if setContact}
     <section name="contact" id="third">
-      <Contact />
+      <Contact onClickChangeView={onClickChangeView} />
     </section>
+    {/if}
   </main>
 </div>
 
@@ -81,12 +91,9 @@
     grid-row: 1 / 2;
   }
 
-  #first {
+  #first, #second, #third {
     width: 75%;
     margin: 25% 0px;
   }
-  #second {
-    width: 75%;
-    margin: 5% 0px;
-  }
+  
 </style>

@@ -1,4 +1,5 @@
 <script>
+  export let onClickChangeView = () => {};
 </script>
 
 <section>
@@ -19,8 +20,8 @@
       too.
     </p>
     <div class="links">
-      <a href="#projects">My Projects</a>
-      <a href="#contact">Contact</a>
+      <button on:click={() => onClickChangeView("projects")}>My Projects</button>
+      <button on:click={() => onClickChangeView("contact")}>Contact</button>
     </div>
   </article>
 </section>
@@ -46,7 +47,7 @@
     flex-direction: row;
   }
   
-  .links a:nth-child(even) {
+  .links button:nth-child(even) {
     padding: 0 .5em;
   }
 

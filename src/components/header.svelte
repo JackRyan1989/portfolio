@@ -1,6 +1,6 @@
 <script>
-
   export let makeSmall;
+  export let onClickChangeView = () => {};
 </script>
 
 <svelte:head>
