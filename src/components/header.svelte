@@ -14,8 +14,12 @@
 <header class={makeSmall ? "shrinko" : "expando"}>
   <h1 class={makeSmall ? "shrink" : "expand"}>Hi.<span> I'm Jack.</span></h1>
   <div class={makeSmall ? "links" : "no-links"}>
-    <button on:click={() => onClickChangeView("about")}>About</button>
-    <button on:click={() => onClickChangeView("projects")}>My Projects</button>
+    <button tabindex="0" on:click={() => onClickChangeView("about")}
+      ><span class="underline">About</span></button
+    >
+    <button tabindex="0" on:click={() => onClickChangeView("projects")}
+      ><span class="underline">My Projects</span></button
+    >
   </div>
 </header>
 
@@ -90,7 +94,34 @@
     padding: 2%;
   }
 
-  .links button:hover {
-    
+  .underline {
+    display: inline-block;
+    position: relative;
+    text-decoration: none;
+    color: black;
+    z-index: 1;
+    transition-property: color;
+    transition-duration: 0.25s;
+  }
+
+  .underline:hover {
+    color: white;
+  }
+
+  .underline::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0.025em;
+    height: 0.1em;
+    width: 100%;
+    padding: 0px 1px;
+    background: black;
+    z-index: -1;
+    transition: height 0.25s cubic-bezier(0.6, 0, 0.4, 1);
+  }
+
+  .underline:hover::after {
+    height: 1.1em;
   }
 </style>

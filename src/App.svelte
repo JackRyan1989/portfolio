@@ -33,12 +33,12 @@
 
 <div class="wrapper">
   <div class="header">
-    <Header {makeSmall} onClickChangeView={onClickChangeView} />
+    <Header {makeSmall} {onClickChangeView} />
   </div>
   <main class="content" role="main">
     {#if setAbout}
     <section name="text" id="first">
-      <Text onClickChangeView={onClickChangeView}/>
+      <Text {makeSmall} {onClickChangeView}/>
     </section>
     {:else if setProjects}
     <section name="projects" id="second">

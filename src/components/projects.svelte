@@ -4,10 +4,10 @@
 
 <section>
   <h2>Projects</h2>
-  <article>
+  <article tabindex="0">
     {#each PROJECTS as project}
       <div class="item-grid" id={project.id}>
-        <a class="item" href={project.url} target="_blank">
+        <a tabindex="0" class="item" href={project.url} target="_blank">
           <div class="item-content">
             <div>
               <h3 class="item-heading">{project.title}</h3>
@@ -55,11 +55,11 @@
   }
 
   article {
-    align-items: flex-start;
-    display: flex;
     min-height: 100%;
-    justify-content: center;
-    padding: 0px var(--spacing-l) var(--spacing-xxl) var(--spacing-l);
+  }
+
+  h2 {
+    margin: 0px 0px 2% 0;
   }
 
   .item-grid {
@@ -68,7 +68,7 @@
     grid-column-gap: var(--spacing-l);
     grid-row-gap: var(--spacing-l);
     max-width: var(--width-container);
-    width: 100%;
+    width: 75%;
   }
 
   .item {
