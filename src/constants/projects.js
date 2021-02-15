@@ -39,8 +39,8 @@ const PROJECTS = [
     tech: ["React", "MongoDB Stitch", "MaterialUI"],
     tasks:
       "Side project to track my son's movements in the womb, sleeping, eating and pooping habits, along with parent effort. Oh and there's a contraction timer thrown in for good measure :)",
-    image: "",
-    alt: "",
+    image: "/assets/Github_Logo.png",
+    alt: "Github Logo",
   },
   {
     url: "https://github.com/maleszewskid/Project-3",
