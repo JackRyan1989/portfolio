@@ -33,7 +33,7 @@
 
 <div class="wrapper">
   <div class="header">
-    <Header {makeSmall} {onClickChangeView} />
+    <Header {makeSmall} {onClickChangeView} {setAbout}/>
   </div>
   <main class="content" role="main">
     {#if setAbout}

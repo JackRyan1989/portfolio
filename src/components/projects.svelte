@@ -3,29 +3,34 @@
 </script>
 
 <section>
-  <h2>Projects</h2>
-  <article tabindex="0">
+  <h2>Stuff I Done & Made</h2>
+  <article id="container" tabindex="0">
+    <div class="item-grid">
     {#each PROJECTS as project}
-      <div class="item-grid" id={project.id}>
         <a tabindex="0" class="item" href={project.url} target="_blank">
           <div class="item-content">
-            <div>
+            <div class="title">
               <h3 class="item-heading">{project.title}</h3>
+              <div class="image">
+                <img src={project.image} alt={project.alt}/>
+              </div>
             </div>
-            <div>
+            <div class="tag-tasks-container">
+            <div class="tags">
               <span class="item-category">{@html project.tech}</span>
-            </div>
-            <div>
-              {@html project.tasks}
+              <div class="projects">
+                {@html project.tasks}
+              </div>
             </div>
           </div>
+          </div>
         </a>
+        {:else}
+        <div>
+          <p>Hey something went wrong loading projects!</p>
+        </div>
+        {/each}
       </div>
-    {:else}
-      <div>
-        <p>Hey something went wrong loading projects!</p>
-      </div>
-    {/each}
   </article>
 </section>
 
@@ -73,19 +78,27 @@
 
   .item {
     position: relative;
+    height: 100%;
+    border-radius: 8px;
   }
 
   .item:hover {
     transform: scale(1.05) translateZ(0);
+    box-shadow: 8px 8px 10px rgba(0,0,0,0.3);
+    transition-property: transform, box-shadow;
+    transition-duration: 0.5s;
   }
 
   .item-grid:hover > .item:not(:hover) {
-    filter: brightness(0.5) saturate(0) contrast(1.2) blur(20px);
+    filter: brightness(0.5) saturate(0) contrast(1.2) blur(1px);
+    transition-property: filter;
+    transition-duration: 0.5s;
   }
 
   .item-category {
     font-size: 0.85em;
     font-style: italic;
+    margin-bottom: 2%;
   }
 
   .item-content {
@@ -98,12 +111,43 @@
     margin: 0.5em;
     min-height: 4em;
     text-decoration: none;
-    border: solid lightgrey 1px;
     color: #000;
     border-radius: 0.5em;
   }
 
   a:hover {
     text-decoration: none;
+  }
+
+  .tag-tasks-container {
+    display: flex;
+    flex-direction: column;
+    justify-items: flex-start;
+    width: 100%;
+  }
+
+  .title {
+    padding: 0.25em;
+    margin: 0 0 2% 0;
+    text-decoration: underline;
+    width: 100%;
+  }
+
+  .tags {
+    margin: 0 0 2% 0;
+  }
+
+  .tags,
+  .projects {
+    padding: 0 1em;
+  }
+
+  .image {
+    margin: 2% 0;
+  }
+  .image img {
+    object-fit: contain;
+    width: 10%;
+    height: auto;
   }
 </style>
