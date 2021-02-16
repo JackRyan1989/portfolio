@@ -3,15 +3,27 @@
 
 <section>
   <h3>Contact Me</h3>
-  <div tabindex="0" class="contact-links">
-    <a tabindex="0" href="https://www.linkedin.com/in/johnanthonyryan/" target="_blank"
-      ><span class="underline">LinkedIn</span></a
+  <div role="group" class="contact-links">
+    <a
+      role="link"
+      aria-labelledby="email"
+      tabindex="0"
+      href="mailto:jack.jackryan@protonmail.com"
+      ><span id="email" class="underline">Email</span></a
     >
-    <a tabindex="0" href="mailto:jack.jackryan@protonmail.com"
-      ><span class="underline">Email</span></a
+    <a
+      role="link"
+      aria-labelledby="github"
+      tabindex="0"
+      href="https://github.com/JackRyan1989"
+      target="_blank"><span id="github" class="underline">Github</span></a
     >
-    <a tabindex="0" href="https://github.com/JackRyan1989" target="_blank"
-      ><span class="underline">Github</span></a
+    <a
+      role="link"
+      aria-labelledby="linkedin"
+      tabindex="0"
+      href="https://www.linkedin.com/in/johnanthonyryan/"
+      target="_blank"><span id="linkedin" class="underline">LinkedIn</span></a
     >
   </div>
 </section>

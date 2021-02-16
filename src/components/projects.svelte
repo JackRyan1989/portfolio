@@ -4,15 +4,15 @@
 
 <section>
   <h2>Stuff I Done & Made</h2>
-  <article id="container" tabindex="0">
+  <article id="container" role="group">
     <div class="item-grid">
     {#each PROJECTS as project}
-        <a tabindex="0" class="item" href={project.url} target="_blank">
+        <a role="link" tabindex="0" class="item" href={project.url} target="_blank">
           <div class="item-content">
             <div class="title">
               <h3 class="item-heading">{project.title}</h3>
               <div class="image">
-                <img src={project.image} alt={project.alt}/>
+                <img role="img" src={project.image} alt={project.alt}/>
               </div>
             </div>
             <div class="tag-tasks-container">

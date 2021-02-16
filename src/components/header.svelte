@@ -16,13 +16,21 @@
   <h1 class={makeSmall ? "shrink" : "expand"}>Hi.<span> I'm Jack.</span></h1>
   <div class={makeSmall ? "links" : "no-links"}>
     {#if !setAbout}
-    <button tabindex="0" on:click={() => onClickChangeView("about")}
-      ><span class="underline">About</span></button
-    >
+      <button
+        role="navigation"
+        aria-labelledby="aboutLink"
+        tabindex="0"
+        on:click={() => onClickChangeView("about")}
+        ><span id="aboutLink" class="underline">About</span></button
+      >
     {:else if setAbout}
-    <button tabindex="0" on:click={() => onClickChangeView("projects")}
-      ><span class="underline">Projects</span></button
-    >
+      <button
+        role="navigation"
+        aria-labelledby="projectsLink"
+        tabindex="0"
+        on:click={() => onClickChangeView("projects")}
+        ><span id="projectsLink" class="underline">Projects</span></button
+      >
     {/if}
   </div>
 </header>
