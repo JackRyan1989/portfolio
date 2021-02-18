@@ -2,6 +2,14 @@
   import PROJECTS from "../constants/projects";
 </script>
 
+<svelte:head>
+  <link rel="preconnect" href="https://fonts.gstatic.com" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400&display=swap"
+    rel="stylesheet"
+  />
+</svelte:head>
+
 <section>
   <h2>Stuff I Done & Made</h2>
   <article id="container" role="group">
@@ -68,11 +76,23 @@
 
   section {
     display: grid;
+    font-family: "Nunito", sans-serif;
+    font-weight: 200;
   }
 
-  article {
+  #container {
     min-height: 100%;
+    height: 60vh;
+    overflow-y: scroll;
+    overflow-x: visible;
+    z-index: 3;
+    padding-left: 2%;
+    scrollbar-width: none;
   }
+
+  #container::-webkit-scrollbar {
+    display: none;
+}
 
   h2 {
     margin: 0px 0px 2% 0;
@@ -84,7 +104,7 @@
     grid-column-gap: var(--spacing-l);
     grid-row-gap: var(--spacing-l);
     max-width: var(--width-container);
-    width: 75%;
+    width: 85%;
   }
 
   .item {
@@ -95,9 +115,8 @@
 
   .item:hover {
     transform: scale(1.05) translateZ(0);
-    box-shadow: 8px 8px 10px rgba(0, 0, 0, 0.3);
     scale: 103%;
-    transition-property: transform, box-shadow, scale;
+    transition-property: transform, scale;
     transition-duration: 0.5s;
   }
 
@@ -135,9 +154,8 @@
 
   .item-content {
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+    flex-direction: row;
+    justify-content: center; 
     min-width: 25%;
     padding: 0.5em;
     margin: 0.5em;

@@ -1,9 +1,18 @@
 <script>
-  import Contact from './contact.svelte'
+  import Contact from "./contact.svelte";
   export let makeSmall;
 </script>
 
+<svelte:head>
+  <link rel="preconnect" href="https://fonts.gstatic.com" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400&display=swap"
+    rel="stylesheet"
+  />
+</svelte:head>
+
 <section>
+  {#if makeSmall}
   <article>
     <h2>Howdy!</h2>
     <br />
@@ -20,12 +29,11 @@
       about my past life in cognitive-neuroscience research, because that was neat
       too.
     </p>
-    {#if makeSmall}
-    <div>
-      <Contact />
-    </div>
+      <div>
+        <Contact />
+      </div>
+    </article>
     {/if}
-  </article>
 </section>
 
 <style>
@@ -41,5 +49,8 @@
   section {
     display: grid;
     padding: 0.25em 0.5em;
+    font-family: Nunito, sans-serif;
+    font-weight: 200;
   }
+
 </style>

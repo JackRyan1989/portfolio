@@ -33,17 +33,17 @@
 
 <div class="wrapper">
   <div class="header">
-    <Header {makeSmall} {onClickChangeView} {setAbout}/>
+    <Header {makeSmall} {onClickChangeView} {setAbout} />
   </div>
   <main class="content" role="main">
     {#if setAbout}
-    <section name="text" id="first">
-      <Text {makeSmall} {onClickChangeView}/>
-    </section>
+      <section name="text" id="first">
+        <Text {makeSmall} {onClickChangeView} />
+      </section>
     {:else if setProjects}
-    <section name="projects" id="second">
-      <Projects/>
-    </section>
+      <section name="projects" id="second">
+        <Projects />
+      </section>
     {/if}
   </main>
 </div>
@@ -62,24 +62,24 @@
   .wrapper {
     display: grid;
     grid-template-columns: minmax(10px, 1fr) minmax(10px, 3fr);
-    grid-template-rows: min-content min-content 1fr;
+    grid-template-rows: min-content min-content 1fr min-content;
     gap: 1px;
   }
 
   .header {
+    background-color: #fff;
     grid-column: 1 / -1;
-    position: fixed;
-    top: 0;
+    grid-row: 1/ 1;
   }
 
   .content {
     grid-column: 2 / 3;
-    grid-row: 1 / 2;
+    grid-row: 2 / 2;
   }
 
-  #first, #second {
+  #first,
+  #second {
     width: 75%;
-    margin: 10% 0px;
+    margin: 2% 0px;
   }
-
 </style>

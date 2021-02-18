@@ -7,7 +7,7 @@
 <svelte:head>
   <link rel="preconnect" href="https://fonts.gstatic.com" />
   <link
-    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&family=Open+Sans:wght@400;800&family=Roboto&display=swap"
+    href="https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400&display=swap"
     rel="stylesheet"
   />
 </svelte:head>
@@ -46,8 +46,8 @@
   }
 
   header {
-    background-color: #fff;
     height: 100vh;
+    width: 100%;
     opacity: 1;
     z-index: 2;
   }
@@ -63,7 +63,8 @@
 
   .shrinko {
     height: 10vh;
-    transition-property: height;
+    border-bottom: solid 1px lightgray;
+    transition-property: height, border-bottom;
     transition-duration: 0.1s;
   }
 
@@ -97,9 +98,8 @@
     right: 0;
     margin: 2%;
     display: block;
-    opacity: 1;
-    transition-property: opacity;
-    transition-duration: 0.5s;
+    font-family: "Nunito", sans-serif;
+    font-weight: 200;
   }
 
   .links button {
