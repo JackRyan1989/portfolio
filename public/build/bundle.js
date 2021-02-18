@@ -712,6 +712,9 @@ var app = (function () {
     	let t5;
     	let a2;
     	let span2;
+    	let t7;
+    	let a3;
+    	let span3;
 
     	const block = {
     		c: function create() {
@@ -731,6 +734,10 @@ var app = (function () {
     			a2 = element("a");
     			span2 = element("span");
     			span2.textContent = "LinkedIn";
+    			t7 = space();
+    			a3 = element("a");
+    			span3 = element("span");
+    			span3.textContent = "Google Scholar";
     			attr_dev(h3, "class", "svelte-ggovmb");
     			add_location(h3, file$1, 4, 2, 32);
     			attr_dev(span0, "id", "email");
@@ -762,6 +769,16 @@ var app = (function () {
     			attr_dev(a2, "target", "_blank");
     			attr_dev(a2, "class", "svelte-ggovmb");
     			add_location(a2, file$1, 20, 4, 487);
+    			attr_dev(span3, "id", "googleScholar");
+    			attr_dev(span3, "class", "underline svelte-ggovmb");
+    			add_location(span3, file$1, 32, 22, 1004);
+    			attr_dev(a3, "role", "link");
+    			attr_dev(a3, "aria-labelledby", "googleScholar");
+    			attr_dev(a3, "tabindex", "0");
+    			attr_dev(a3, "href", "https://scholar.google.com/citations?hl=en&view_op=list_works&gmla=AJsN-F5WdgPu5EfV3xkLLaBPa86b5hQZBhkkO_kKHu9_VlrR1MZT2pefwHXmSkfiZjWMOBSTaNFh1Afxd5y225wzHae1b7Xaew&user=mIzNk1QAAAAJ");
+    			attr_dev(a3, "target", "_blank");
+    			attr_dev(a3, "class", "svelte-ggovmb");
+    			add_location(a3, file$1, 27, 4, 707);
     			attr_dev(div, "role", "group");
     			attr_dev(div, "class", "contact-links svelte-ggovmb");
     			add_location(div, file$1, 5, 2, 54);
@@ -784,6 +801,9 @@ var app = (function () {
     			append_dev(div, t5);
     			append_dev(div, a2);
     			append_dev(a2, span2);
+    			append_dev(div, t7);
+    			append_dev(div, a3);
+    			append_dev(a3, span3);
     		},
     		p: noop,
     		i: noop,

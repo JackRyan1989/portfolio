@@ -25,6 +25,13 @@
       href="https://www.linkedin.com/in/johnanthonyryan/"
       target="_blank"><span id="linkedin" class="underline">LinkedIn</span></a
     >
+    <a
+      role="link"
+      aria-labelledby="googleScholar"
+      tabindex="0"
+      href="https://scholar.google.com/citations?hl=en&view_op=list_works&gmla=AJsN-F5WdgPu5EfV3xkLLaBPa86b5hQZBhkkO_kKHu9_VlrR1MZT2pefwHXmSkfiZjWMOBSTaNFh1Afxd5y225wzHae1b7Xaew&user=mIzNk1QAAAAJ"
+      target="_blank"><span id="googleScholar" class="underline">Google Scholar</span></a
+    >
   </div>
 </section>
 
