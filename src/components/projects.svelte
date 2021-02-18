@@ -6,31 +6,42 @@
   <h2>Stuff I Done & Made</h2>
   <article id="container" role="group">
     <div class="item-grid">
-    {#each PROJECTS as project}
-        <a role="link" tabindex="0" class="item" href={project.url} target="_blank">
+      {#each PROJECTS as project}
+        <a
+        id = {project.id}
+          role="link"
+          tabindex="0"
+          class="item"
+          href={project.url}
+          target="_blank"
+        >
           <div class="item-content">
             <div class="title">
               <h3 class="item-heading">{project.title}</h3>
               <div class="image">
-                <img role="img" src={project.image} alt={project.alt}/>
+                <img role="img" src={project.image} alt={project.alt} />
               </div>
             </div>
             <div class="tag-tasks-container">
-            <div class="tags">
-              <span class="item-category">{@html project.tech}</span>
-              <div class="projects">
-                {@html project.tasks}
+              <div class="tags">
+                <ul>
+                  {#each project.tech as tech}
+                    <li class="item-category">{tech}</li>
+                  {/each}
+                </ul>
+                <div class="projects">
+                  {@html project.tasks}
+                </div>
               </div>
             </div>
           </div>
-          </div>
         </a>
-        {:else}
+      {:else}
         <div>
           <p>Hey something went wrong loading projects!</p>
         </div>
-        {/each}
-      </div>
+      {/each}
+    </div>
   </article>
 </section>
 
@@ -84,8 +95,9 @@
 
   .item:hover {
     transform: scale(1.05) translateZ(0);
-    box-shadow: 8px 8px 10px rgba(0,0,0,0.3);
-    transition-property: transform, box-shadow;
+    box-shadow: 8px 8px 10px rgba(0, 0, 0, 0.3);
+    scale: 103%;
+    transition-property: transform, box-shadow, scale;
     transition-duration: 0.5s;
   }
 
@@ -95,11 +107,31 @@
     transition-duration: 0.5s;
   }
 
+  ul {
+    list-style: none;
+  }
+  
   .item-category {
+    display: inline-flex;
     font-size: 0.85em;
     font-style: italic;
-    margin-bottom: 2%;
+    padding: 1%;
+    margin: 2%;
   }
+
+  .item-category:hover {
+    scale: 110%;
+    color: steelblue;
+    transition-property: scale, color;
+    transition-duration: 0.25s;
+  }
+
+  .item-category::before {
+    content: "#";
+    vertical-align: baseline;
+    opacity: 1;
+  }
+
 
   .item-content {
     display: flex;
@@ -134,7 +166,8 @@
   }
 
   .tags {
-    margin: 0 0 2% 0;
+    display: flex;
+    flex-direction: row;
   }
 
   .tags,
