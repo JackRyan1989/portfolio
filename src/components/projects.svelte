@@ -198,7 +198,7 @@
   }
   .image img {
     object-fit: contain;
-    width: 10%;
+    width: 25%;
     height: auto;
   }
 </style>

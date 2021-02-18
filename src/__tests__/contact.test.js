@@ -14,4 +14,5 @@ test("that links are present", () => {
   expect(getByText("Email")).toBeInTheDocument();
   expect(getByText("Github")).toBeInTheDocument();
   expect(getByText("LinkedIn")).toBeInTheDocument();
+  expect(getByText("Google Scholar")).toBeInTheDocument();
 });
