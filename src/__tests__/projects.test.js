@@ -8,7 +8,7 @@ const projLength = PROJECTS.length;
 test("shows proper heading when rendered", () => {
   const { getByText } = render(Projects);
 
-  expect(getByText("Stuff I Done & Made")).toBeInTheDocument();
+  expect(getByText("Projects")).toBeInTheDocument();
 });
 
 test("has an anchor tag with a link role", () => {

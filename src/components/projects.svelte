@@ -11,7 +11,7 @@
 </svelte:head>
 
 <section>
-  <h2>Stuff I Done & Made</h2>
+  <h2>Projects</h2>
   <article id="container" role="group">
     <div class="item-grid">
       {#each PROJECTS as project}
