@@ -78,6 +78,7 @@
     display: grid;
     font-family: "Nunito", sans-serif;
     font-weight: 200;
+    padding: 0.25em 0.5em;
   }
 
   #container {
