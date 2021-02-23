@@ -54,6 +54,7 @@
 
   .expando {
     height: 100vh;
+    border-bottom: solid 1px rgba(211, 211, 211, 0)
   }
 
   .expand {
@@ -63,9 +64,9 @@
 
   .shrinko {
     height: 10vh;
-    border-bottom: solid 1px lightgray;
+    border-bottom: solid 1px rgba(211, 211, 211, .4);
     transition-property: height, border-bottom;
-    transition-duration: 0.1s;
+    transition-duration: 0.1s, 0.3s;
   }
 
   .shrink {

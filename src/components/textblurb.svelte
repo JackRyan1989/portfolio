@@ -11,7 +11,7 @@
   />
 </svelte:head>
 
-<section>
+<section class={makeSmall ? "fadeIn" : null}>
   {#if makeSmall}
   <article>
     <h2>Howdy!</h2>
@@ -51,6 +51,14 @@
     padding: 0.25em 0.5em;
     font-family: Nunito, sans-serif;
     font-weight: 200;
+    opacity: 0;
+  }
+
+  .fadeIn {
+    opacity: 1;
+    transition-property: opacity;
+    transition-duration: 0.3s;
+    transition-timing-function: cubic-bezier(.97,-0.01,.93,.43);
   }
 
 </style>
