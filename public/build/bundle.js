@@ -862,11 +862,13 @@ var app = (function () {
     	let t2;
     	let p;
     	let t3;
-    	let br1;
-    	let t4;
-    	let br2;
+    	let a;
     	let t5;
+    	let br1;
     	let t6;
+    	let br2;
+    	let t7;
+    	let t8;
     	let div;
     	let contact;
     	let current;
@@ -881,28 +883,35 @@ var app = (function () {
     			br0 = element("br");
     			t2 = space();
     			p = element("p");
-    			t3 = text("In February 2020 I graduated from the UPenn LPS Coding Bootcamp. Shortly\n      there after I started my first job as a web developer at Drexel\n      University; where I currently work as a frontend developer. I'm passionate\n      about quality and accessible design and code. I'm also the proud father of\n      a human and two cats!\n      ");
+    			t3 = text("In February 2020 I graduated from the UPenn LPS Coding Bootcamp. Shortly\n        there after I started my first job as a web developer at Drexel\n        University; where I currently work as a frontend developer operating in\n        Sitecore CMS. I'm passionate about quality and accessible design and\n        code. I'm always very interested in learning new things, in fact this\n        portfolio is the first site I've made using ");
+    			a = element("a");
+    			a.textContent = "Svelte";
+    			t5 = text("! I'm also the proud father of a human and two cats!\n        ");
     			br1 = element("br");
-    			t4 = space();
-    			br2 = element("br");
-    			t5 = text("\n      This site serves as both a portfolio to demonstrate recent and not so recent\n      past work and also a sandbox for me to play in. I also put in a little bit\n      about my past life in cognitive-neuroscience research, because that was neat\n      too.");
     			t6 = space();
+    			br2 = element("br");
+    			t7 = text("\n        This site serves as both a portfolio to demonstrate recent and not so recent\n        past work and also a sandbox for me to play in. I also put in a little bit\n        about my past life in cognitive-neuroscience research, because that was neat\n        too.");
+    			t8 = space();
     			div = element("div");
     			create_component(contact.$$.fragment);
-    			attr_dev(h2, "class", "svelte-ocup1b");
-    			add_location(h2, file$2, 16, 4, 380);
-    			attr_dev(br0, "class", "svelte-ocup1b");
-    			add_location(br0, file$2, 17, 4, 400);
-    			attr_dev(br1, "class", "svelte-ocup1b");
-    			add_location(br1, file$2, 24, 6, 760);
-    			attr_dev(br2, "class", "svelte-ocup1b");
-    			add_location(br2, file$2, 25, 6, 773);
-    			attr_dev(p, "class", "svelte-ocup1b");
-    			add_location(p, file$2, 18, 4, 411);
-    			attr_dev(div, "class", "svelte-ocup1b");
-    			add_location(div, file$2, 31, 6, 1053);
-    			attr_dev(article, "class", "svelte-ocup1b");
-    			add_location(article, file$2, 15, 2, 366);
+    			attr_dev(h2, "class", "svelte-1982bhz");
+    			add_location(h2, file$2, 16, 6, 384);
+    			attr_dev(br0, "class", "svelte-1982bhz");
+    			add_location(br0, file$2, 17, 6, 406);
+    			attr_dev(a, "href", "https://svelte.dev");
+    			attr_dev(a, "target", "_blank");
+    			attr_dev(a, "class", "svelte-1982bhz");
+    			add_location(a, file$2, 24, 52, 863);
+    			attr_dev(br1, "class", "svelte-1982bhz");
+    			add_location(br1, file$2, 28, 8, 1008);
+    			attr_dev(br2, "class", "svelte-1982bhz");
+    			add_location(br2, file$2, 29, 8, 1023);
+    			attr_dev(p, "class", "svelte-1982bhz");
+    			add_location(p, file$2, 18, 6, 419);
+    			attr_dev(div, "class", "svelte-1982bhz");
+    			add_location(div, file$2, 35, 6, 1313);
+    			attr_dev(article, "class", "svelte-1982bhz");
+    			add_location(article, file$2, 15, 4, 368);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, article, anchor);
@@ -912,11 +921,13 @@ var app = (function () {
     			append_dev(article, t2);
     			append_dev(article, p);
     			append_dev(p, t3);
-    			append_dev(p, br1);
-    			append_dev(p, t4);
-    			append_dev(p, br2);
+    			append_dev(p, a);
     			append_dev(p, t5);
-    			append_dev(article, t6);
+    			append_dev(p, br1);
+    			append_dev(p, t6);
+    			append_dev(p, br2);
+    			append_dev(p, t7);
+    			append_dev(article, t8);
     			append_dev(article, div);
     			mount_component(contact, div, null);
     			current = true;
@@ -965,13 +976,13 @@ var app = (function () {
     			if (if_block) if_block.c();
     			attr_dev(link0, "rel", "preconnect");
     			attr_dev(link0, "href", "https://fonts.gstatic.com");
-    			attr_dev(link0, "class", "svelte-ocup1b");
+    			attr_dev(link0, "class", "svelte-1982bhz");
     			add_location(link0, file$2, 6, 2, 102);
     			attr_dev(link1, "href", "https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400&display=swap");
     			attr_dev(link1, "rel", "stylesheet");
-    			attr_dev(link1, "class", "svelte-ocup1b");
+    			attr_dev(link1, "class", "svelte-1982bhz");
     			add_location(link1, file$2, 7, 2, 163);
-    			attr_dev(section, "class", section_class_value = "" + (null_to_empty(/*makeSmall*/ ctx[0] ? "fadeIn" : null) + " svelte-ocup1b"));
+    			attr_dev(section, "class", section_class_value = "" + (null_to_empty(/*makeSmall*/ ctx[0] ? "fadeIn" : null) + " svelte-1982bhz"));
     			add_location(section, file$2, 13, 0, 300);
     		},
     		l: function claim(nodes) {
@@ -1007,7 +1018,7 @@ var app = (function () {
     				check_outros();
     			}
 
-    			if (!current || dirty & /*makeSmall*/ 1 && section_class_value !== (section_class_value = "" + (null_to_empty(/*makeSmall*/ ctx[0] ? "fadeIn" : null) + " svelte-ocup1b"))) {
+    			if (!current || dirty & /*makeSmall*/ 1 && section_class_value !== (section_class_value = "" + (null_to_empty(/*makeSmall*/ ctx[0] ? "fadeIn" : null) + " svelte-1982bhz"))) {
     				attr_dev(section, "class", section_class_value);
     			}
     		},
@@ -1098,7 +1109,7 @@ var app = (function () {
 
     const PROJECTS = [
       {
-        id: '1',
+        id: "1",
         url: "https://drexel.edu/legacy-center/",
         title: "Drexel University: Legacy Center Archives and Special Collections",
         tech: ["HTML5", "CSS3", "JS"],
@@ -1107,53 +1118,53 @@ var app = (function () {
         alt: "Drexel University Logo",
       },
       {
-        id: '2',
+        id: "2",
         url: "https://drexel.edu/hunger-free-center/",
         title: "Drexel University: The Center for Hunger Free Communities",
         tech: ["HTML5", "CSS3", "JS"],
         tasks:
-          "Homepage Redesign & Informational Architecture Restructuring plus some small topic filtering features.",
+          "Homepage Redesign & Informational Architecture Restructuring plus some Javascript here and there.",
         image: "/assets/Drexel_horizontal_yellow copy.png",
         alt: "Drexel University Logo",
       },
       {
-        id: '3',
+        id: "3",
         url: "https://drexel.edu/disability-resources/",
         title: "Drexel University: Disability Resources",
         tech: ["HTML5", "CSS3", "JS"],
-        tasks: "Homepage Redesign",
+        tasks: "Homepage Redesign & Content Review",
         image: "/assets/Drexel_horizontal_yellow copy.png",
         alt: "Drexel University Logo",
       },
       {
-        id: '4',
+        id: "4",
         url: "https://github.com/CodeForPhilly/prevention-point",
         title: "Code for Philly: Prevention Point",
         tech: ["React", "MaterialUI", "MobX", "Django", "Jest", "Yup"],
         tasks:
-          "Developed models, tests and admin portal for Django backend. Developed tests and validation for frontend components using Yup and Jest.",
+          "Developed new database features with migrations and tests for Django/PostGres backend. Developed tests and validation for frontend components and state management using Yup and Jest.",
         image: "/assets/cfp-logo.png",
         alt: "Code for Philly Logo",
       },
       {
-        id: '5',
-        url: "https://github.com/JackRyan1989/babyTracker",
-        title: "Baby Tracker",
-        tech: ["React", "MongoDB Stitch", "MaterialUI"],
-        tasks:
-          "Side project to track my son's movements in the womb, sleeping, eating and pooping habits, along with parent effort. Oh and there's a contraction timer thrown in for good measure :)",
-        image: "/assets/Github_Logo.png",
-        alt: "Github Logo",
-      },
-      {
-        id: '6',
+        id: "5",
         url: "https://github.com/maleszewskid/Project-3",
         title: "Patient First",
         tech: ["React", "Node", "Express", "PassportJS"],
         tasks:
-          "Built the Node/Express server coupled with a MongoDB database. Developed the API and implemented authentication via PassportJS. Did some of the frontend components for data entry and display.",
+          "Built the Node/Express server coupled with a MongoDB database. Defined the ORM, controllers and views. Developed the API and implemented authentication via PassportJS. Did some of the frontend components for data entry and display, specifically the charts using React ChartKick and React Table packages.",
         image: "assets/upenn-logo.png",
         alt: "University of Pennsylvania Logo",
+      },
+      {
+        id: "5",
+        url: "https://github.com/JackRyan1989/babyTracker",
+        title: "Baby Tracker",
+        tech: ["React", "MongoDB Realm", "MaterialUI"],
+        tasks:
+          "Side project to track my son's movements in the womb, sleeping, eating and pooping habits, along with parent effort. Entirely client-side application complete with user authentication and a MongoDB database courtesy of MongoDB Realm. All styling was done using the Material UI library. Used React Chart JS-2 Package to help with plotting data from MongoDB. Deployed to Github pages.",
+        image: "/assets/Github_Logo.png",
+        alt: "Github Logo",
       },
     ];
 

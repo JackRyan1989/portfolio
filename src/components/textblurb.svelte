@@ -13,27 +13,31 @@
 
 <section class={makeSmall ? "fadeIn" : null}>
   {#if makeSmall}
-  <article>
-    <h2>Howdy!</h2>
-    <br />
-    <p>
-      In February 2020 I graduated from the UPenn LPS Coding Bootcamp. Shortly
-      there after I started my first job as a web developer at Drexel
-      University; where I currently work as a frontend developer. I'm passionate
-      about quality and accessible design and code. I'm also the proud father of
-      a human and two cats!
+    <article>
+      <h2>Howdy!</h2>
       <br />
-      <br />
-      This site serves as both a portfolio to demonstrate recent and not so recent
-      past work and also a sandbox for me to play in. I also put in a little bit
-      about my past life in cognitive-neuroscience research, because that was neat
-      too.
-    </p>
+      <p>
+        In February 2020 I graduated from the UPenn LPS Coding Bootcamp. Shortly
+        there after I started my first job as a web developer at Drexel
+        University; where I currently work as a frontend developer operating in
+        Sitecore CMS. I'm passionate about quality and accessible design and
+        code. I'm always very interested in learning new things, in fact this
+        portfolio is the first site I've made using <a
+          href="https://svelte.dev"
+          target="_blank">Svelte</a
+        >! I'm also the proud father of a human and two cats!
+        <br />
+        <br />
+        This site serves as both a portfolio to demonstrate recent and not so recent
+        past work and also a sandbox for me to play in. I also put in a little bit
+        about my past life in cognitive-neuroscience research, because that was neat
+        too.
+      </p>
       <div>
         <Contact />
       </div>
     </article>
-    {/if}
+  {/if}
 </section>
 
 <style>
@@ -58,7 +62,6 @@
     opacity: 1;
     transition-property: opacity;
     transition-duration: 0.3s;
-    transition-timing-function: cubic-bezier(.97,-0.01,.93,.43);
+    transition-timing-function: cubic-bezier(0.97, -0.01, 0.93, 0.43);
   }
-
 </style>
