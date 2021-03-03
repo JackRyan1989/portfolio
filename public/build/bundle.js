@@ -399,12 +399,12 @@ var app = (function () {
     			span = element("span");
     			span.textContent = "Projects";
     			attr_dev(span, "id", "projectsLink");
-    			attr_dev(span, "class", "underline svelte-atyckd");
+    			attr_dev(span, "class", "underline svelte-o9yfr3");
     			add_location(span, file, 31, 9, 936);
     			attr_dev(button, "role", "navigation");
     			attr_dev(button, "aria-labelledby", "projectsLink");
     			attr_dev(button, "tabindex", "0");
-    			attr_dev(button, "class", "svelte-atyckd");
+    			attr_dev(button, "class", "svelte-o9yfr3");
     			add_location(button, file, 26, 6, 778);
     		},
     		m: function mount(target, anchor) {
@@ -448,12 +448,12 @@ var app = (function () {
     			span = element("span");
     			span.textContent = "About";
     			attr_dev(span, "id", "aboutLink");
-    			attr_dev(span, "class", "underline svelte-atyckd");
+    			attr_dev(span, "class", "underline svelte-o9yfr3");
     			add_location(span, file, 23, 9, 680);
     			attr_dev(button, "role", "navigation");
     			attr_dev(button, "aria-labelledby", "aboutLink");
     			attr_dev(button, "tabindex", "0");
-    			attr_dev(button, "class", "svelte-atyckd");
+    			attr_dev(button, "class", "svelte-o9yfr3");
     			add_location(button, file, 18, 6, 528);
     		},
     		m: function mount(target, anchor) {
@@ -521,19 +521,19 @@ var app = (function () {
     			if (if_block) if_block.c();
     			attr_dev(link0, "rel", "preconnect");
     			attr_dev(link0, "href", "https://fonts.gstatic.com");
-    			attr_dev(link0, "class", "svelte-atyckd");
+    			attr_dev(link0, "class", "svelte-o9yfr3");
     			add_location(link0, file, 7, 2, 126);
     			attr_dev(link1, "href", "https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400&display=swap");
     			attr_dev(link1, "rel", "stylesheet");
-    			attr_dev(link1, "class", "svelte-atyckd");
+    			attr_dev(link1, "class", "svelte-o9yfr3");
     			add_location(link1, file, 8, 2, 187);
-    			attr_dev(span, "class", "svelte-atyckd");
+    			attr_dev(span, "class", "svelte-o9yfr3");
     			add_location(span, file, 15, 49, 424);
-    			attr_dev(h1, "class", h1_class_value = "" + (null_to_empty(/*makeSmall*/ ctx[0] ? "shrink" : "expand") + " svelte-atyckd"));
+    			attr_dev(h1, "class", h1_class_value = "" + (null_to_empty(/*makeSmall*/ ctx[0] ? "shrink" : "expand") + " svelte-o9yfr3"));
     			add_location(h1, file, 15, 2, 377);
-    			attr_dev(div, "class", div_class_value = "" + (null_to_empty(/*makeSmall*/ ctx[0] ? "links" : "no-links") + " svelte-atyckd"));
+    			attr_dev(div, "class", div_class_value = "" + (null_to_empty(/*makeSmall*/ ctx[0] ? "links" : "no-links") + " svelte-o9yfr3"));
     			add_location(div, file, 16, 2, 455);
-    			attr_dev(header, "class", header_class_value = "" + (null_to_empty(/*makeSmall*/ ctx[0] ? "shrinko" : "expando") + " svelte-atyckd"));
+    			attr_dev(header, "class", header_class_value = "" + (null_to_empty(/*makeSmall*/ ctx[0] ? "shrinko" : "expando") + " svelte-o9yfr3"));
     			add_location(header, file, 14, 0, 324);
     		},
     		l: function claim(nodes) {
@@ -552,7 +552,7 @@ var app = (function () {
     			if (if_block) if_block.m(div, null);
     		},
     		p: function update(ctx, [dirty]) {
-    			if (dirty & /*makeSmall*/ 1 && h1_class_value !== (h1_class_value = "" + (null_to_empty(/*makeSmall*/ ctx[0] ? "shrink" : "expand") + " svelte-atyckd"))) {
+    			if (dirty & /*makeSmall*/ 1 && h1_class_value !== (h1_class_value = "" + (null_to_empty(/*makeSmall*/ ctx[0] ? "shrink" : "expand") + " svelte-o9yfr3"))) {
     				attr_dev(h1, "class", h1_class_value);
     			}
 
@@ -568,11 +568,11 @@ var app = (function () {
     				}
     			}
 
-    			if (dirty & /*makeSmall*/ 1 && div_class_value !== (div_class_value = "" + (null_to_empty(/*makeSmall*/ ctx[0] ? "links" : "no-links") + " svelte-atyckd"))) {
+    			if (dirty & /*makeSmall*/ 1 && div_class_value !== (div_class_value = "" + (null_to_empty(/*makeSmall*/ ctx[0] ? "links" : "no-links") + " svelte-o9yfr3"))) {
     				attr_dev(div, "class", div_class_value);
     			}
 
-    			if (dirty & /*makeSmall*/ 1 && header_class_value !== (header_class_value = "" + (null_to_empty(/*makeSmall*/ ctx[0] ? "shrinko" : "expando") + " svelte-atyckd"))) {
+    			if (dirty & /*makeSmall*/ 1 && header_class_value !== (header_class_value = "" + (null_to_empty(/*makeSmall*/ ctx[0] ? "shrinko" : "expando") + " svelte-o9yfr3"))) {
     				attr_dev(header, "class", header_class_value);
     			}
     		},
@@ -894,23 +894,23 @@ var app = (function () {
     			t8 = space();
     			div = element("div");
     			create_component(contact.$$.fragment);
-    			attr_dev(h2, "class", "svelte-1982bhz");
+    			attr_dev(h2, "class", "svelte-15yjdjg");
     			add_location(h2, file$2, 16, 6, 384);
-    			attr_dev(br0, "class", "svelte-1982bhz");
+    			attr_dev(br0, "class", "svelte-15yjdjg");
     			add_location(br0, file$2, 17, 6, 406);
     			attr_dev(a, "href", "https://svelte.dev");
     			attr_dev(a, "target", "_blank");
-    			attr_dev(a, "class", "svelte-1982bhz");
+    			attr_dev(a, "class", "svelte-15yjdjg");
     			add_location(a, file$2, 24, 52, 863);
-    			attr_dev(br1, "class", "svelte-1982bhz");
+    			attr_dev(br1, "class", "svelte-15yjdjg");
     			add_location(br1, file$2, 28, 8, 1008);
-    			attr_dev(br2, "class", "svelte-1982bhz");
+    			attr_dev(br2, "class", "svelte-15yjdjg");
     			add_location(br2, file$2, 29, 8, 1023);
-    			attr_dev(p, "class", "svelte-1982bhz");
+    			attr_dev(p, "class", "svelte-15yjdjg");
     			add_location(p, file$2, 18, 6, 419);
-    			attr_dev(div, "class", "svelte-1982bhz");
+    			attr_dev(div, "class", "svelte-15yjdjg");
     			add_location(div, file$2, 35, 6, 1313);
-    			attr_dev(article, "class", "svelte-1982bhz");
+    			attr_dev(article, "class", "svelte-15yjdjg");
     			add_location(article, file$2, 15, 4, 368);
     		},
     		m: function mount(target, anchor) {
@@ -976,13 +976,13 @@ var app = (function () {
     			if (if_block) if_block.c();
     			attr_dev(link0, "rel", "preconnect");
     			attr_dev(link0, "href", "https://fonts.gstatic.com");
-    			attr_dev(link0, "class", "svelte-1982bhz");
+    			attr_dev(link0, "class", "svelte-15yjdjg");
     			add_location(link0, file$2, 6, 2, 102);
     			attr_dev(link1, "href", "https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400&display=swap");
     			attr_dev(link1, "rel", "stylesheet");
-    			attr_dev(link1, "class", "svelte-1982bhz");
+    			attr_dev(link1, "class", "svelte-15yjdjg");
     			add_location(link1, file$2, 7, 2, 163);
-    			attr_dev(section, "class", section_class_value = "" + (null_to_empty(/*makeSmall*/ ctx[0] ? "fadeIn" : null) + " svelte-1982bhz"));
+    			attr_dev(section, "class", section_class_value = "" + (null_to_empty(/*makeSmall*/ ctx[0] ? "fadeIn" : null) + " svelte-15yjdjg"));
     			add_location(section, file$2, 13, 0, 300);
     		},
     		l: function claim(nodes) {
@@ -1018,7 +1018,7 @@ var app = (function () {
     				check_outros();
     			}
 
-    			if (!current || dirty & /*makeSmall*/ 1 && section_class_value !== (section_class_value = "" + (null_to_empty(/*makeSmall*/ ctx[0] ? "fadeIn" : null) + " svelte-1982bhz"))) {
+    			if (!current || dirty & /*makeSmall*/ 1 && section_class_value !== (section_class_value = "" + (null_to_empty(/*makeSmall*/ ctx[0] ? "fadeIn" : null) + " svelte-15yjdjg"))) {
     				attr_dev(section, "class", section_class_value);
     			}
     		},
@@ -1112,7 +1112,7 @@ var app = (function () {
         id: "1",
         url: "https://drexel.edu/legacy-center/",
         title: "Drexel University: Legacy Center Archives and Special Collections",
-        tech: ["HTML5", "CSS3", "JS"],
+        tech: ["HTML5", "CSS3", "JS", "Sitecore CMS"],
         tasks: "Homepage Redesign & Content Review",
         image: "/assets/Drexel_horizontal_yellow copy.png",
         alt: "Drexel University Logo",
@@ -1121,7 +1121,7 @@ var app = (function () {
         id: "2",
         url: "https://drexel.edu/hunger-free-center/",
         title: "Drexel University: The Center for Hunger Free Communities",
-        tech: ["HTML5", "CSS3", "JS"],
+        tech: ["HTML5", "CSS3", "JS", "Sitecore CMS"],
         tasks:
           "Homepage Redesign & Informational Architecture Restructuring plus some Javascript here and there.",
         image: "/assets/Drexel_horizontal_yellow copy.png",
@@ -1131,7 +1131,7 @@ var app = (function () {
         id: "3",
         url: "https://drexel.edu/disability-resources/",
         title: "Drexel University: Disability Resources",
-        tech: ["HTML5", "CSS3", "JS"],
+        tech: ["HTML5", "CSS3", "JS", "Sitecore CMS"],
         tasks: "Homepage Redesign & Content Review",
         image: "/assets/Drexel_horizontal_yellow copy.png",
         alt: "Drexel University Logo",
@@ -1195,9 +1195,9 @@ var app = (function () {
     			p = element("p");
     			p.textContent = "Hey something went wrong loading projects!";
     			t1 = space();
-    			attr_dev(p, "class", "svelte-1yxa85p");
+    			attr_dev(p, "class", "svelte-y70b1");
     			add_location(p, file$3, 48, 10, 1323);
-    			attr_dev(div, "class", "svelte-1yxa85p");
+    			attr_dev(div, "class", "svelte-y70b1");
     			add_location(div, file$3, 47, 8, 1307);
     		},
     		m: function mount(target, anchor) {
@@ -1231,7 +1231,7 @@ var app = (function () {
     		c: function create() {
     			li = element("li");
     			t = text(t_value);
-    			attr_dev(li, "class", "item-category svelte-1yxa85p");
+    			attr_dev(li, "class", "item-category svelte-y70b1");
     			add_location(li, file$3, 36, 20, 1027);
     		},
     		m: function mount(target, anchor) {
@@ -1305,31 +1305,31 @@ var app = (function () {
     			t3 = space();
     			div2 = element("div");
     			t4 = space();
-    			attr_dev(h3, "class", "item-heading svelte-1yxa85p");
+    			attr_dev(h3, "class", "item-heading svelte-y70b1");
     			add_location(h3, file$3, 27, 14, 667);
     			attr_dev(img, "role", "img");
     			if (img.src !== (img_src_value = /*project*/ ctx[0].image)) attr_dev(img, "src", img_src_value);
     			attr_dev(img, "alt", /*project*/ ctx[0].alt);
-    			attr_dev(img, "class", "svelte-1yxa85p");
+    			attr_dev(img, "class", "svelte-y70b1");
     			add_location(img, file$3, 29, 16, 763);
-    			attr_dev(div0, "class", "image svelte-1yxa85p");
+    			attr_dev(div0, "class", "image svelte-y70b1");
     			add_location(div0, file$3, 28, 14, 727);
-    			attr_dev(div1, "class", "title svelte-1yxa85p");
+    			attr_dev(div1, "class", "title svelte-y70b1");
     			add_location(div1, file$3, 26, 12, 633);
-    			attr_dev(ul, "class", "svelte-1yxa85p");
+    			attr_dev(ul, "class", "svelte-y70b1");
     			add_location(ul, file$3, 34, 16, 955);
-    			attr_dev(div2, "class", "projects svelte-1yxa85p");
+    			attr_dev(div2, "class", "projects svelte-y70b1");
     			add_location(div2, file$3, 39, 16, 1129);
-    			attr_dev(div3, "class", "tags svelte-1yxa85p");
+    			attr_dev(div3, "class", "tags svelte-y70b1");
     			add_location(div3, file$3, 33, 14, 920);
-    			attr_dev(div4, "class", "tag-tasks-container svelte-1yxa85p");
+    			attr_dev(div4, "class", "tag-tasks-container svelte-y70b1");
     			add_location(div4, file$3, 32, 12, 872);
-    			attr_dev(div5, "class", "item-content svelte-1yxa85p");
+    			attr_dev(div5, "class", "item-content svelte-y70b1");
     			add_location(div5, file$3, 25, 10, 594);
     			attr_dev(a, "id", /*project*/ ctx[0].id);
     			attr_dev(a, "role", "link");
     			attr_dev(a, "tabindex", "0");
-    			attr_dev(a, "class", "item svelte-1yxa85p");
+    			attr_dev(a, "class", "item svelte-y70b1");
     			attr_dev(a, "href", /*project*/ ctx[0].url);
     			attr_dev(a, "target", "_blank");
     			add_location(a, file$3, 17, 8, 422);
@@ -1444,21 +1444,21 @@ var app = (function () {
 
     			attr_dev(link0, "rel", "preconnect");
     			attr_dev(link0, "href", "https://fonts.gstatic.com");
-    			attr_dev(link0, "class", "svelte-1yxa85p");
+    			attr_dev(link0, "class", "svelte-y70b1");
     			add_location(link0, file$3, 5, 2, 84);
     			attr_dev(link1, "href", "https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400&display=swap");
     			attr_dev(link1, "rel", "stylesheet");
-    			attr_dev(link1, "class", "svelte-1yxa85p");
+    			attr_dev(link1, "class", "svelte-y70b1");
     			add_location(link1, file$3, 6, 2, 145);
-    			attr_dev(h2, "class", "svelte-1yxa85p");
+    			attr_dev(h2, "class", "svelte-y70b1");
     			add_location(h2, file$3, 13, 2, 294);
-    			attr_dev(div, "class", "item-grid svelte-1yxa85p");
+    			attr_dev(div, "class", "item-grid svelte-y70b1");
     			add_location(div, file$3, 15, 4, 356);
     			attr_dev(article, "id", "container");
     			attr_dev(article, "role", "group");
-    			attr_dev(article, "class", "svelte-1yxa85p");
+    			attr_dev(article, "class", "svelte-y70b1");
     			add_location(article, file$3, 14, 2, 314);
-    			attr_dev(section, "class", "svelte-1yxa85p");
+    			attr_dev(section, "class", "svelte-y70b1");
     			add_location(section, file$3, 12, 0, 282);
     		},
     		l: function claim(nodes) {

@@ -105,7 +105,7 @@
     grid-column-gap: var(--spacing-l);
     grid-row-gap: var(--spacing-l);
     max-width: var(--width-container);
-    width: 85%;
+    width: 100%;
   }
 
   .item {

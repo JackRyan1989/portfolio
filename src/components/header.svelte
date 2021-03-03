@@ -108,6 +108,7 @@
   }
 
   .underline {
+    font-size: 1.50rem;
     display: inline-block;
     position: relative;
     text-decoration: none;

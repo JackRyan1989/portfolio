@@ -63,5 +63,6 @@
     transition-property: opacity;
     transition-duration: 0.3s;
     transition-timing-function: cubic-bezier(0.97, -0.01, 0.93, 0.43);
+    max-width: 80ch;
   }
 </style>
