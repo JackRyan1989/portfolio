@@ -6,7 +6,9 @@
 </script>
 
 <section>
+  <div class="heading-holder">
   <h3 on:click="{displayLinks}">Contact Me</h3>
+  </div>
   <div role="group" class={linkToggle ? "contact-links" : "hide-links" }>
     <a
       role="link"
@@ -54,6 +56,11 @@
     margin: 4% 1% 2% 1%;
   }
 
+  .heading-holder {
+    margin: 1%;
+    padding: 1%;
+  }
+
   h3 {
     font-size: 1.35rem;
     display: inline-block;
@@ -63,6 +70,7 @@
     z-index: 1;
     transition-property: color;
     transition-duration: 0.25s;
+    font-family: "Nunito", sans-serif;
   }
 
   h3:hover {
@@ -75,7 +83,7 @@
     left: 0;
     bottom: 0.025em;
     height: 0.1em;
-    width: 30%;
+    width: 100%;
     padding: 0px 1px;
     background: black;
     z-index: -1;
@@ -147,24 +155,9 @@
       font-size: 1rem;
     }
 
-    h3::after {
-      width: 85%;
-    }
-
     div.contact-links a {
       font-size: .75em;
   }
 }
-
- /* Tablet Screen Sizing */
- @media only screen 
- and (min-device-width: 768px) 
-  and (max-device-width: 1024px) 
-  and (-webkit-min-device-pixel-ratio: 1) {
-    h3::after {
-      width: 60%;
-    }
-  }
-
 
 </style>

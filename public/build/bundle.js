@@ -1264,9 +1264,10 @@ var app = (function () {
 
     function create_fragment$3(ctx) {
     	let section;
+    	let div0;
     	let h3;
     	let t1;
-    	let div;
+    	let div1;
     	let a0;
     	let span0;
     	let t3;
@@ -1278,17 +1279,18 @@ var app = (function () {
     	let t7;
     	let a3;
     	let span3;
-    	let div_class_value;
+    	let div1_class_value;
     	let mounted;
     	let dispose;
 
     	const block = {
     		c: function create() {
     			section = element("section");
+    			div0 = element("div");
     			h3 = element("h3");
     			h3.textContent = "Contact Me";
     			t1 = space();
-    			div = element("div");
+    			div1 = element("div");
     			a0 = element("a");
     			span0 = element("span");
     			span0.textContent = "Email";
@@ -1304,51 +1306,53 @@ var app = (function () {
     			a3 = element("a");
     			span3 = element("span");
     			span3.textContent = "Google Scholar";
-    			attr_dev(h3, "class", "svelte-x33b2d");
-    			add_location(h3, file$3, 8, 2, 147);
+    			attr_dev(h3, "class", "svelte-uheta");
+    			add_location(h3, file$3, 9, 2, 178);
+    			attr_dev(div0, "class", "heading-holder svelte-uheta");
+    			add_location(div0, file$3, 8, 2, 147);
     			attr_dev(span0, "id", "email");
-    			attr_dev(span0, "class", "underline svelte-x33b2d");
-    			add_location(span0, file$3, 15, 7, 397);
+    			attr_dev(span0, "class", "underline svelte-uheta");
+    			add_location(span0, file$3, 17, 7, 437);
     			attr_dev(a0, "role", "link");
     			attr_dev(a0, "aria-labelledby", "email");
     			attr_dev(a0, "tabindex", "0");
     			attr_dev(a0, "href", "mailto:jack.jackryan@protonmail.com");
-    			attr_dev(a0, "class", "svelte-x33b2d");
-    			add_location(a0, file$3, 10, 4, 271);
+    			attr_dev(a0, "class", "svelte-uheta");
+    			add_location(a0, file$3, 12, 4, 311);
     			attr_dev(span1, "id", "github");
-    			attr_dev(span1, "class", "underline svelte-x33b2d");
-    			add_location(span1, file$3, 22, 22, 596);
+    			attr_dev(span1, "class", "underline svelte-uheta");
+    			add_location(span1, file$3, 24, 22, 636);
     			attr_dev(a1, "role", "link");
     			attr_dev(a1, "aria-labelledby", "github");
     			attr_dev(a1, "tabindex", "0");
     			attr_dev(a1, "href", "https://github.com/JackRyan1989");
     			attr_dev(a1, "target", "_blank");
-    			attr_dev(a1, "class", "svelte-x33b2d");
-    			add_location(a1, file$3, 17, 4, 458);
+    			attr_dev(a1, "class", "svelte-uheta");
+    			add_location(a1, file$3, 19, 4, 498);
     			attr_dev(span2, "id", "linkedin");
-    			attr_dev(span2, "class", "underline svelte-x33b2d");
-    			add_location(span2, file$3, 29, 22, 812);
+    			attr_dev(span2, "class", "underline svelte-uheta");
+    			add_location(span2, file$3, 31, 22, 852);
     			attr_dev(a2, "role", "link");
     			attr_dev(a2, "aria-labelledby", "linkedin");
     			attr_dev(a2, "tabindex", "0");
     			attr_dev(a2, "href", "https://www.linkedin.com/in/johnanthonyryan/");
     			attr_dev(a2, "target", "_blank");
-    			attr_dev(a2, "class", "svelte-x33b2d");
-    			add_location(a2, file$3, 24, 4, 659);
+    			attr_dev(a2, "class", "svelte-uheta");
+    			add_location(a2, file$3, 26, 4, 699);
     			attr_dev(span3, "id", "googleScholar");
-    			attr_dev(span3, "class", "underline svelte-x33b2d");
-    			add_location(span3, file$3, 36, 22, 1176);
+    			attr_dev(span3, "class", "underline svelte-uheta");
+    			add_location(span3, file$3, 38, 22, 1216);
     			attr_dev(a3, "role", "link");
     			attr_dev(a3, "aria-labelledby", "googleScholar");
     			attr_dev(a3, "tabindex", "0");
     			attr_dev(a3, "href", "https://scholar.google.com/citations?hl=en&view_op=list_works&gmla=AJsN-F5WdgPu5EfV3xkLLaBPa86b5hQZBhkkO_kKHu9_VlrR1MZT2pefwHXmSkfiZjWMOBSTaNFh1Afxd5y225wzHae1b7Xaew&user=mIzNk1QAAAAJ");
     			attr_dev(a3, "target", "_blank");
-    			attr_dev(a3, "class", "svelte-x33b2d");
-    			add_location(a3, file$3, 31, 4, 879);
-    			attr_dev(div, "role", "group");
-    			attr_dev(div, "class", div_class_value = "" + (null_to_empty(/*linkToggle*/ ctx[0] ? "contact-links" : "hide-links") + " svelte-x33b2d"));
-    			add_location(div, file$3, 9, 2, 195);
-    			attr_dev(section, "class", "svelte-x33b2d");
+    			attr_dev(a3, "class", "svelte-uheta");
+    			add_location(a3, file$3, 33, 4, 919);
+    			attr_dev(div1, "role", "group");
+    			attr_dev(div1, "class", div1_class_value = "" + (null_to_empty(/*linkToggle*/ ctx[0] ? "contact-links" : "hide-links") + " svelte-uheta"));
+    			add_location(div1, file$3, 11, 2, 235);
+    			attr_dev(section, "class", "svelte-uheta");
     			add_location(section, file$3, 7, 0, 135);
     		},
     		l: function claim(nodes) {
@@ -1356,19 +1360,20 @@ var app = (function () {
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, section, anchor);
-    			append_dev(section, h3);
+    			append_dev(section, div0);
+    			append_dev(div0, h3);
     			append_dev(section, t1);
-    			append_dev(section, div);
-    			append_dev(div, a0);
+    			append_dev(section, div1);
+    			append_dev(div1, a0);
     			append_dev(a0, span0);
-    			append_dev(div, t3);
-    			append_dev(div, a1);
+    			append_dev(div1, t3);
+    			append_dev(div1, a1);
     			append_dev(a1, span1);
-    			append_dev(div, t5);
-    			append_dev(div, a2);
+    			append_dev(div1, t5);
+    			append_dev(div1, a2);
     			append_dev(a2, span2);
-    			append_dev(div, t7);
-    			append_dev(div, a3);
+    			append_dev(div1, t7);
+    			append_dev(div1, a3);
     			append_dev(a3, span3);
 
     			if (!mounted) {
@@ -1377,8 +1382,8 @@ var app = (function () {
     			}
     		},
     		p: function update(ctx, [dirty]) {
-    			if (dirty & /*linkToggle*/ 1 && div_class_value !== (div_class_value = "" + (null_to_empty(/*linkToggle*/ ctx[0] ? "contact-links" : "hide-links") + " svelte-x33b2d"))) {
-    				attr_dev(div, "class", div_class_value);
+    			if (dirty & /*linkToggle*/ 1 && div1_class_value !== (div1_class_value = "" + (null_to_empty(/*linkToggle*/ ctx[0] ? "contact-links" : "hide-links") + " svelte-uheta"))) {
+    				attr_dev(div1, "class", div1_class_value);
     			}
     		},
     		i: noop,
