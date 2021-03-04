@@ -202,4 +202,16 @@
     width: 25%;
     height: auto;
   }
+
+   /* Phone Screen Sizing */
+   @media only screen 
+  and (min-device-width: 320px) 
+  and (max-device-width: 568px)
+  and (-webkit-min-device-pixel-ratio: 2) {
+
+
+}
+
+
+
 </style>

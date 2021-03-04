@@ -1,7 +1,6 @@
 <script>
   export let makeSmall;
-  export let setAbout;
-  export let onClickChangeView = () => {};
+  export let mediaWidth;
 </script>
 
 <svelte:head>
@@ -13,26 +12,13 @@
 </svelte:head>
 
 <header class={makeSmall ? "shrinko" : "expando"}>
-  <h1 class={makeSmall ? "shrink" : "expand"}>Hi.<span> I'm Jack.</span></h1>
-  <div class={makeSmall ? "links" : "no-links"}>
-    {#if !setAbout}
-      <button
-        role="navigation"
-        aria-labelledby="aboutLink"
-        tabindex="0"
-        on:click={() => onClickChangeView("about")}
-        ><span id="aboutLink" class="underline">About</span></button
-      >
-    {:else if setAbout}
-      <button
-        role="navigation"
-        aria-labelledby="projectsLink"
-        tabindex="0"
-        on:click={() => onClickChangeView("projects")}
-        ><span id="projectsLink" class="underline">Projects</span></button
-      >
+  <h1 class={makeSmall ? "shrink" : "expand"}>
+    Hi.
+    {#if mediaWidth < 600}
+      <br class="hide" />
     {/if}
-  </div>
+    <span> I'm Jack.</span>
+  </h1>
 </header>
 
 <style>
@@ -54,7 +40,7 @@
 
   .expando {
     height: 100vh;
-    border-bottom: solid 1px rgba(211, 211, 211, 0)
+    border-bottom: solid 1px rgba(211, 211, 211, 0);
   }
 
   .expand {
@@ -64,7 +50,7 @@
 
   .shrinko {
     height: 10vh;
-    border-bottom: solid 1px rgba(211, 211, 211, .4);
+    border-bottom: solid 1px rgba(211, 211, 211, 0.4);
     transition-property: height, border-bottom;
     transition-duration: 0.1s, 0.3s;
   }
@@ -88,54 +74,43 @@
     font-size: 0.5em;
   }
 
-  .no-links {
+  .hide {
     display: none;
-    opacity: 0;
   }
 
-  .links {
-    position: fixed;
-    top: 0;
-    right: 0;
-    margin: 2%;
-    display: block;
-    font-family: "Nunito", sans-serif;
-    font-weight: 200;
+  /* Phone Screen Sizing */
+  @media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (-webkit-min-device-pixel-ratio: 2) {
+    .expand {
+      font-size: 10em;
+      max-width: 40ex;
+    }
+
+    h1 span {
+      font-size: 0.5em;
+    }
   }
 
-  .links button {
-    padding: 2%;
+   /* Tablet Screen Sizing */
+ @media only screen 
+ and (min-device-width: 768px) 
+  and (max-device-width: 1024px) 
+  and (-webkit-min-device-pixel-ratio: 1) {
+    .expand {
+      font-size: 10em;
+      max-width: 40ex;
+    }
+
+    .shrinko {
+    height: 6vh;
+    }
+
+    h1 span {
+      font-size: 0.5em;
+    }
+
   }
 
-  .underline {
-    font-size: 1.50rem;
-    display: inline-block;
-    position: relative;
-    text-decoration: none;
-    color: black;
-    z-index: 1;
-    transition-property: color;
-    transition-duration: 0.25s;
-  }
-
-  .underline:hover {
-    color: white;
-  }
-
-  .underline::after {
-    content: "";
-    position: absolute;
-    left: 0;
-    bottom: 0.025em;
-    height: 0.1em;
-    width: 100%;
-    padding: 0px 1px;
-    background: black;
-    z-index: -1;
-    transition: height 0.25s cubic-bezier(0.6, 0, 0.4, 1);
-  }
-
-  .underline:hover::after {
-    height: 1.1em;
+  /* Laptop Screen Sizing */
+  @media only screen and (min-device-width: 1200px) and (max-device-width: 1600px) and (-webkit-min-device-pixel-ratio: 1) {
   }
 </style>

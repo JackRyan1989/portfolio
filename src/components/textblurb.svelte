@@ -1,5 +1,4 @@
 <script>
-  import Contact from "./contact.svelte";
   export let makeSmall;
 </script>
 
@@ -33,9 +32,6 @@
         about my past life in cognitive-neuroscience research, because that was neat
         too.
       </p>
-      <div>
-        <Contact />
-      </div>
     </article>
   {/if}
 </section>
