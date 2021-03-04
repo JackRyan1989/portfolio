@@ -37,7 +37,7 @@
                     <li class="item-category">{tech}</li>
                   {/each}
                 </ul>
-                <div class="projects">
+                <div class="tasks">
                   {@html project.tasks}
                 </div>
               </div>
@@ -190,7 +190,7 @@
   }
 
   .tags,
-  .projects {
+  .tasks {
     padding: 0 1em;
   }
 
@@ -208,7 +208,18 @@
   and (min-device-width: 320px) 
   and (max-device-width: 568px)
   and (-webkit-min-device-pixel-ratio: 2) {
+    .tasks {
+      display: none;
+    }
 
+    .item-content {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .tags {
+      padding: 0;
+    }
 
 }
 
