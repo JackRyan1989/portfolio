@@ -56,11 +56,6 @@
     margin: 4% 1% 2% 1%;
   }
 
-  .heading-holder {
-    margin: 1%;
-    padding: 1%;
-  }
-
   h3 {
     font-size: 1.35rem;
     display: inline-block;
