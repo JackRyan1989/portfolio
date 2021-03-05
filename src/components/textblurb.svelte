@@ -16,19 +16,19 @@
       <h2>Howdy!</h2>
       <br />
       <p>
-        In February 2020 I graduated from the UPenn LPS Coding Bootcamp. Shortly
-        there after I started my first job as a web developer at Drexel
-        University; where I currently work as a frontend developer operating in
+        In February 2020, I graduated from the UPenn LPS Coding Bootcamp. Shortly
+        thereafter I started my current job as a web developer at Drexel
+        University, where I work as a front-end developer operating in
         Sitecore CMS. I'm passionate about quality and accessible design and
-        code. I'm always very interested in learning new things, in fact this
+        code. I'm always very interested in learning new things, and in fact this
         portfolio is the first site I've made using <a
           href="https://svelte.dev"
           target="_blank">Svelte</a
-        >! I'm also the proud father of a human and two cats!
+        >! I'm also the proud father of one human being and two cats!
         <br />
         <br />
-        This site serves as both a portfolio to demonstrate recent and not so recent
-        past work and also a sandbox for me to play in. I also put in a little bit
+        This site serves as both a portfolio to demonstrate recent and
+        past work and as a sandbox for me to play in. I've also included a little bit
         about my past life in cognitive-neuroscience research, because that was neat
         too.
       </p>

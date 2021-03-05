@@ -396,7 +396,7 @@ var app = (function () {
     	const block = {
     		c: function create() {
     			br = element("br");
-    			attr_dev(br, "class", "hide svelte-zsgaid");
+    			attr_dev(br, "class", "hide svelte-vdrw3g");
     			add_location(br, file, 17, 6, 422);
     		},
     		m: function mount(target, anchor) {
@@ -445,17 +445,17 @@ var app = (function () {
     			span.textContent = "I'm Jack.";
     			attr_dev(link0, "rel", "preconnect");
     			attr_dev(link0, "href", "https://fonts.gstatic.com");
-    			attr_dev(link0, "class", "svelte-zsgaid");
+    			attr_dev(link0, "class", "svelte-vdrw3g");
     			add_location(link0, file, 6, 2, 85);
     			attr_dev(link1, "href", "https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400&display=swap");
     			attr_dev(link1, "rel", "stylesheet");
-    			attr_dev(link1, "class", "svelte-zsgaid");
+    			attr_dev(link1, "class", "svelte-vdrw3g");
     			add_location(link1, file, 7, 2, 146);
-    			attr_dev(span, "class", "svelte-zsgaid");
+    			attr_dev(span, "class", "svelte-vdrw3g");
     			add_location(span, file, 19, 4, 456);
-    			attr_dev(h1, "class", h1_class_value = "" + (null_to_empty(/*makeSmall*/ ctx[0] ? "shrink" : "expand") + " svelte-zsgaid"));
+    			attr_dev(h1, "class", h1_class_value = "" + (null_to_empty(/*makeSmall*/ ctx[0] ? "shrink" : "expand") + " svelte-vdrw3g"));
     			add_location(h1, file, 14, 2, 336);
-    			attr_dev(header, "class", header_class_value = "" + (null_to_empty(/*makeSmall*/ ctx[0] ? "shrinko" : "expando") + " svelte-zsgaid"));
+    			attr_dev(header, "class", header_class_value = "" + (null_to_empty(/*makeSmall*/ ctx[0] ? "shrinko" : "expando") + " svelte-vdrw3g"));
     			add_location(header, file, 13, 0, 283);
     		},
     		l: function claim(nodes) {
@@ -484,11 +484,11 @@ var app = (function () {
     				if_block = null;
     			}
 
-    			if (dirty & /*makeSmall*/ 1 && h1_class_value !== (h1_class_value = "" + (null_to_empty(/*makeSmall*/ ctx[0] ? "shrink" : "expand") + " svelte-zsgaid"))) {
+    			if (dirty & /*makeSmall*/ 1 && h1_class_value !== (h1_class_value = "" + (null_to_empty(/*makeSmall*/ ctx[0] ? "shrink" : "expand") + " svelte-vdrw3g"))) {
     				attr_dev(h1, "class", h1_class_value);
     			}
 
-    			if (dirty & /*makeSmall*/ 1 && header_class_value !== (header_class_value = "" + (null_to_empty(/*makeSmall*/ ctx[0] ? "shrinko" : "expando") + " svelte-zsgaid"))) {
+    			if (dirty & /*makeSmall*/ 1 && header_class_value !== (header_class_value = "" + (null_to_empty(/*makeSmall*/ ctx[0] ? "shrinko" : "expando") + " svelte-vdrw3g"))) {
     				attr_dev(header, "class", header_class_value);
     			}
     		},
@@ -614,14 +614,14 @@ var app = (function () {
     			br0 = element("br");
     			t2 = space();
     			p = element("p");
-    			t3 = text("In February 2020 I graduated from the UPenn LPS Coding Bootcamp. Shortly\n        there after I started my first job as a web developer at Drexel\n        University; where I currently work as a frontend developer operating in\n        Sitecore CMS. I'm passionate about quality and accessible design and\n        code. I'm always very interested in learning new things, in fact this\n        portfolio is the first site I've made using ");
+    			t3 = text("In February 2020, I graduated from the UPenn LPS Coding Bootcamp. Shortly\n        thereafter I started my current job as a web developer at Drexel\n        University, where I work as a front-end developer operating in\n        Sitecore CMS. I'm passionate about quality and accessible design and\n        code. I'm always very interested in learning new things, and in fact this\n        portfolio is the first site I've made using ");
     			a = element("a");
     			a.textContent = "Svelte";
-    			t5 = text("! I'm also the proud father of a human and two cats!\n        ");
+    			t5 = text("! I'm also the proud father of one human being and two cats!\n        ");
     			br1 = element("br");
     			t6 = space();
     			br2 = element("br");
-    			t7 = text("\n        This site serves as both a portfolio to demonstrate recent and not so recent\n        past work and also a sandbox for me to play in. I also put in a little bit\n        about my past life in cognitive-neuroscience research, because that was neat\n        too.");
+    			t7 = text("\n        This site serves as both a portfolio to demonstrate recent and\n        past work and as a sandbox for me to play in. I've also included a little bit\n        about my past life in cognitive-neuroscience research, because that was neat\n        too.");
     			attr_dev(h2, "class", "svelte-15yjdjg");
     			add_location(h2, file$1, 15, 6, 342);
     			attr_dev(br0, "class", "svelte-15yjdjg");
@@ -629,11 +629,11 @@ var app = (function () {
     			attr_dev(a, "href", "https://svelte.dev");
     			attr_dev(a, "target", "_blank");
     			attr_dev(a, "class", "svelte-15yjdjg");
-    			add_location(a, file$1, 23, 52, 821);
+    			add_location(a, file$1, 23, 52, 818);
     			attr_dev(br1, "class", "svelte-15yjdjg");
-    			add_location(br1, file$1, 27, 8, 966);
+    			add_location(br1, file$1, 27, 8, 971);
     			attr_dev(br2, "class", "svelte-15yjdjg");
-    			add_location(br2, file$1, 28, 8, 981);
+    			add_location(br2, file$1, 28, 8, 986);
     			attr_dev(p, "class", "svelte-15yjdjg");
     			add_location(p, file$1, 17, 6, 377);
     			attr_dev(article, "class", "svelte-15yjdjg");
@@ -888,9 +888,9 @@ var app = (function () {
     			p = element("p");
     			p.textContent = "Hey something went wrong loading projects!";
     			t1 = space();
-    			attr_dev(p, "class", "svelte-p7aj8a");
+    			attr_dev(p, "class", "svelte-u8zlhb");
     			add_location(p, file$2, 48, 10, 1320);
-    			attr_dev(div, "class", "svelte-p7aj8a");
+    			attr_dev(div, "class", "svelte-u8zlhb");
     			add_location(div, file$2, 47, 8, 1304);
     		},
     		m: function mount(target, anchor) {
@@ -924,7 +924,7 @@ var app = (function () {
     		c: function create() {
     			li = element("li");
     			t = text(t_value);
-    			attr_dev(li, "class", "item-category svelte-p7aj8a");
+    			attr_dev(li, "class", "item-category svelte-u8zlhb");
     			add_location(li, file$2, 36, 20, 1027);
     		},
     		m: function mount(target, anchor) {
@@ -998,31 +998,31 @@ var app = (function () {
     			t3 = space();
     			div2 = element("div");
     			t4 = space();
-    			attr_dev(h3, "class", "item-heading svelte-p7aj8a");
+    			attr_dev(h3, "class", "item-heading svelte-u8zlhb");
     			add_location(h3, file$2, 27, 14, 667);
     			attr_dev(img, "role", "img");
     			if (img.src !== (img_src_value = /*project*/ ctx[0].image)) attr_dev(img, "src", img_src_value);
     			attr_dev(img, "alt", /*project*/ ctx[0].alt);
-    			attr_dev(img, "class", "svelte-p7aj8a");
+    			attr_dev(img, "class", "svelte-u8zlhb");
     			add_location(img, file$2, 29, 16, 763);
-    			attr_dev(div0, "class", "image svelte-p7aj8a");
+    			attr_dev(div0, "class", "image svelte-u8zlhb");
     			add_location(div0, file$2, 28, 14, 727);
-    			attr_dev(div1, "class", "title svelte-p7aj8a");
+    			attr_dev(div1, "class", "title svelte-u8zlhb");
     			add_location(div1, file$2, 26, 12, 633);
-    			attr_dev(ul, "class", "svelte-p7aj8a");
+    			attr_dev(ul, "class", "svelte-u8zlhb");
     			add_location(ul, file$2, 34, 16, 955);
-    			attr_dev(div2, "class", "tasks svelte-p7aj8a");
+    			attr_dev(div2, "class", "tasks svelte-u8zlhb");
     			add_location(div2, file$2, 39, 16, 1129);
-    			attr_dev(div3, "class", "tags svelte-p7aj8a");
+    			attr_dev(div3, "class", "tags svelte-u8zlhb");
     			add_location(div3, file$2, 33, 14, 920);
-    			attr_dev(div4, "class", "tag-tasks-container svelte-p7aj8a");
+    			attr_dev(div4, "class", "tag-tasks-container svelte-u8zlhb");
     			add_location(div4, file$2, 32, 12, 872);
-    			attr_dev(div5, "class", "item-content svelte-p7aj8a");
+    			attr_dev(div5, "class", "item-content svelte-u8zlhb");
     			add_location(div5, file$2, 25, 10, 594);
     			attr_dev(a, "id", /*project*/ ctx[0].id);
     			attr_dev(a, "role", "link");
     			attr_dev(a, "tabindex", "0");
-    			attr_dev(a, "class", "item svelte-p7aj8a");
+    			attr_dev(a, "class", "item svelte-u8zlhb");
     			attr_dev(a, "href", /*project*/ ctx[0].url);
     			attr_dev(a, "target", "_blank");
     			add_location(a, file$2, 17, 8, 422);
@@ -1137,21 +1137,21 @@ var app = (function () {
 
     			attr_dev(link0, "rel", "preconnect");
     			attr_dev(link0, "href", "https://fonts.gstatic.com");
-    			attr_dev(link0, "class", "svelte-p7aj8a");
+    			attr_dev(link0, "class", "svelte-u8zlhb");
     			add_location(link0, file$2, 5, 2, 84);
     			attr_dev(link1, "href", "https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400&display=swap");
     			attr_dev(link1, "rel", "stylesheet");
-    			attr_dev(link1, "class", "svelte-p7aj8a");
+    			attr_dev(link1, "class", "svelte-u8zlhb");
     			add_location(link1, file$2, 6, 2, 145);
-    			attr_dev(h2, "class", "svelte-p7aj8a");
+    			attr_dev(h2, "class", "svelte-u8zlhb");
     			add_location(h2, file$2, 13, 2, 294);
-    			attr_dev(div, "class", "item-grid svelte-p7aj8a");
+    			attr_dev(div, "class", "item-grid svelte-u8zlhb");
     			add_location(div, file$2, 15, 4, 356);
     			attr_dev(article, "id", "container");
     			attr_dev(article, "role", "group");
-    			attr_dev(article, "class", "svelte-p7aj8a");
+    			attr_dev(article, "class", "svelte-u8zlhb");
     			add_location(article, file$2, 14, 2, 314);
-    			attr_dev(section, "class", "svelte-p7aj8a");
+    			attr_dev(section, "class", "svelte-u8zlhb");
     			add_location(section, file$2, 12, 0, 282);
     		},
     		l: function claim(nodes) {

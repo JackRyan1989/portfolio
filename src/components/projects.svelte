@@ -114,19 +114,6 @@
     border-radius: 8px;
   }
 
-  .item:hover {
-    transform: scale(1.05) translateZ(0);
-    scale: 103%;
-    transition-property: transform, scale;
-    transition-duration: 0.5s;
-  }
-
-  .item-grid:hover > .item:not(:hover) {
-    filter: brightness(0.5) saturate(0) contrast(1.2) blur(1px);
-    transition-property: filter;
-    transition-duration: 0.5s;
-  }
-
   ul {
     list-style: none;
   }
@@ -137,13 +124,6 @@
     font-style: italic;
     padding: 1%;
     margin: 2%;
-  }
-
-  .item-category:hover {
-    scale: 110%;
-    color: steelblue;
-    transition-property: scale, color;
-    transition-duration: 0.25s;
   }
 
   .item-category::before {
@@ -223,6 +203,29 @@
 
 }
 
+/* Laptop Screen Sizing */
+@media only screen and (min-device-width: 1200px) and (max-device-width: 1600px) and (-webkit-min-device-pixel-ratio: 1) {
+  .item:hover {
+    transform: scale(1.05) translateZ(0);
+    scale: 103%;
+    transition-property: transform, scale;
+    transition-duration: 0.5s;
+  }
+
+  .item-grid:hover > .item:not(:hover) {
+    filter: brightness(0.5) saturate(0) contrast(1.2) blur(1px);
+    transition-property: filter;
+    transition-duration: 0.5s;
+  }
+
+  .item-category:hover {
+    scale: 110%;
+    color: steelblue;
+    transition-property: scale, color;
+    transition-duration: 0.25s;
+  }
+  
+  }
 
 
 </style>

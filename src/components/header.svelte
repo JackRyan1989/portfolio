@@ -90,27 +90,20 @@
     }
   }
 
-   /* Tablet Screen Sizing */
- @media only screen 
- and (min-device-width: 768px) 
-  and (max-device-width: 1024px) 
-  and (-webkit-min-device-pixel-ratio: 1) {
+  /* Tablet Screen Sizing */
+  @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 1) {
     .expand {
       font-size: 10em;
       max-width: 40ex;
     }
 
     .shrinko {
-    height: 6vh;
+      height: 6vh;
     }
 
     h1 span {
       font-size: 0.5em;
     }
-
   }
 
-  /* Laptop Screen Sizing */
-  @media only screen and (min-device-width: 1200px) and (max-device-width: 1600px) and (-webkit-min-device-pixel-ratio: 1) {
-  }
 </style>
