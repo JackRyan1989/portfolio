@@ -1,11 +1,12 @@
 <script>
+  export let makeSmall;
   let linkToggle = false;
   function displayLinks() {
     linkToggle ? linkToggle = false : linkToggle = true;
   }
 </script>
 
-<section>
+<section class:makeSmall>
   <div class="heading-holder">
   <h3 on:click="{displayLinks}">Contact Me</h3>
   </div>
@@ -105,6 +106,10 @@
     border-radius: 0.5em;
   }
 
+  .makeSmall {
+    animation: fadeIn 1s
+  }
+
   .underline {
     display: inline-block;
     position: relative;
@@ -138,6 +143,11 @@
 
   .hide-links {
     display: none;
+  }
+
+  @keyframes fadeIn {
+    from {opacity: 0;}
+    to {opacity: 1;}
   }
 
    /* Phone Screen Sizing */

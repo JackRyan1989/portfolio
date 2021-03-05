@@ -68,6 +68,9 @@ var app = (function () {
     function children(element) {
         return Array.from(element.childNodes);
     }
+    function toggle_class(element, name, toggle) {
+        element.classList[toggle ? 'add' : 'remove'](name);
+    }
     function custom_event(type, detail) {
         const e = document.createEvent('CustomEvent');
         e.initCustomEvent(type, false, false, detail);
@@ -1306,54 +1309,55 @@ var app = (function () {
     			a3 = element("a");
     			span3 = element("span");
     			span3.textContent = "Google Scholar";
-    			attr_dev(h3, "class", "svelte-uheta");
-    			add_location(h3, file$3, 9, 2, 178);
-    			attr_dev(div0, "class", "heading-holder svelte-uheta");
-    			add_location(div0, file$3, 8, 2, 147);
+    			attr_dev(h3, "class", "svelte-1y82jb4");
+    			add_location(h3, file$3, 10, 2, 218);
+    			attr_dev(div0, "class", "heading-holder svelte-1y82jb4");
+    			add_location(div0, file$3, 9, 2, 187);
     			attr_dev(span0, "id", "email");
-    			attr_dev(span0, "class", "underline svelte-uheta");
-    			add_location(span0, file$3, 17, 7, 437);
+    			attr_dev(span0, "class", "underline svelte-1y82jb4");
+    			add_location(span0, file$3, 18, 7, 477);
     			attr_dev(a0, "role", "link");
     			attr_dev(a0, "aria-labelledby", "email");
     			attr_dev(a0, "tabindex", "0");
     			attr_dev(a0, "href", "mailto:jack.jackryan@protonmail.com");
-    			attr_dev(a0, "class", "svelte-uheta");
-    			add_location(a0, file$3, 12, 4, 311);
+    			attr_dev(a0, "class", "svelte-1y82jb4");
+    			add_location(a0, file$3, 13, 4, 351);
     			attr_dev(span1, "id", "github");
-    			attr_dev(span1, "class", "underline svelte-uheta");
-    			add_location(span1, file$3, 24, 22, 636);
+    			attr_dev(span1, "class", "underline svelte-1y82jb4");
+    			add_location(span1, file$3, 25, 22, 676);
     			attr_dev(a1, "role", "link");
     			attr_dev(a1, "aria-labelledby", "github");
     			attr_dev(a1, "tabindex", "0");
     			attr_dev(a1, "href", "https://github.com/JackRyan1989");
     			attr_dev(a1, "target", "_blank");
-    			attr_dev(a1, "class", "svelte-uheta");
-    			add_location(a1, file$3, 19, 4, 498);
+    			attr_dev(a1, "class", "svelte-1y82jb4");
+    			add_location(a1, file$3, 20, 4, 538);
     			attr_dev(span2, "id", "linkedin");
-    			attr_dev(span2, "class", "underline svelte-uheta");
-    			add_location(span2, file$3, 31, 22, 852);
+    			attr_dev(span2, "class", "underline svelte-1y82jb4");
+    			add_location(span2, file$3, 32, 22, 892);
     			attr_dev(a2, "role", "link");
     			attr_dev(a2, "aria-labelledby", "linkedin");
     			attr_dev(a2, "tabindex", "0");
     			attr_dev(a2, "href", "https://www.linkedin.com/in/johnanthonyryan/");
     			attr_dev(a2, "target", "_blank");
-    			attr_dev(a2, "class", "svelte-uheta");
-    			add_location(a2, file$3, 26, 4, 699);
+    			attr_dev(a2, "class", "svelte-1y82jb4");
+    			add_location(a2, file$3, 27, 4, 739);
     			attr_dev(span3, "id", "googleScholar");
-    			attr_dev(span3, "class", "underline svelte-uheta");
-    			add_location(span3, file$3, 38, 22, 1216);
+    			attr_dev(span3, "class", "underline svelte-1y82jb4");
+    			add_location(span3, file$3, 39, 22, 1256);
     			attr_dev(a3, "role", "link");
     			attr_dev(a3, "aria-labelledby", "googleScholar");
     			attr_dev(a3, "tabindex", "0");
     			attr_dev(a3, "href", "https://scholar.google.com/citations?hl=en&view_op=list_works&gmla=AJsN-F5WdgPu5EfV3xkLLaBPa86b5hQZBhkkO_kKHu9_VlrR1MZT2pefwHXmSkfiZjWMOBSTaNFh1Afxd5y225wzHae1b7Xaew&user=mIzNk1QAAAAJ");
     			attr_dev(a3, "target", "_blank");
-    			attr_dev(a3, "class", "svelte-uheta");
-    			add_location(a3, file$3, 33, 4, 919);
+    			attr_dev(a3, "class", "svelte-1y82jb4");
+    			add_location(a3, file$3, 34, 4, 959);
     			attr_dev(div1, "role", "group");
-    			attr_dev(div1, "class", div1_class_value = "" + (null_to_empty(/*linkToggle*/ ctx[0] ? "contact-links" : "hide-links") + " svelte-uheta"));
-    			add_location(div1, file$3, 11, 2, 235);
-    			attr_dev(section, "class", "svelte-uheta");
-    			add_location(section, file$3, 7, 0, 135);
+    			attr_dev(div1, "class", div1_class_value = "" + (null_to_empty(/*linkToggle*/ ctx[1] ? "contact-links" : "hide-links") + " svelte-1y82jb4"));
+    			add_location(div1, file$3, 12, 2, 275);
+    			attr_dev(section, "class", "svelte-1y82jb4");
+    			toggle_class(section, "makeSmall", /*makeSmall*/ ctx[0]);
+    			add_location(section, file$3, 8, 0, 159);
     		},
     		l: function claim(nodes) {
     			throw new Error("options.hydrate only works if the component was compiled with the `hydratable: true` option");
@@ -1377,13 +1381,17 @@ var app = (function () {
     			append_dev(a3, span3);
 
     			if (!mounted) {
-    				dispose = listen_dev(h3, "click", /*displayLinks*/ ctx[1], false, false, false);
+    				dispose = listen_dev(h3, "click", /*displayLinks*/ ctx[2], false, false, false);
     				mounted = true;
     			}
     		},
     		p: function update(ctx, [dirty]) {
-    			if (dirty & /*linkToggle*/ 1 && div1_class_value !== (div1_class_value = "" + (null_to_empty(/*linkToggle*/ ctx[0] ? "contact-links" : "hide-links") + " svelte-uheta"))) {
+    			if (dirty & /*linkToggle*/ 2 && div1_class_value !== (div1_class_value = "" + (null_to_empty(/*linkToggle*/ ctx[1] ? "contact-links" : "hide-links") + " svelte-1y82jb4"))) {
     				attr_dev(div1, "class", div1_class_value);
+    			}
+
+    			if (dirty & /*makeSmall*/ 1) {
+    				toggle_class(section, "makeSmall", /*makeSmall*/ ctx[0]);
     			}
     		},
     		i: noop,
@@ -1409,37 +1417,43 @@ var app = (function () {
     function instance$3($$self, $$props, $$invalidate) {
     	let { $$slots: slots = {}, $$scope } = $$props;
     	validate_slots("Contact", slots, []);
+    	let { makeSmall } = $$props;
     	let linkToggle = false;
 
     	function displayLinks() {
     		linkToggle
-    		? $$invalidate(0, linkToggle = false)
-    		: $$invalidate(0, linkToggle = true);
+    		? $$invalidate(1, linkToggle = false)
+    		: $$invalidate(1, linkToggle = true);
     	}
 
-    	const writable_props = [];
+    	const writable_props = ["makeSmall"];
 
     	Object.keys($$props).forEach(key => {
     		if (!~writable_props.indexOf(key) && key.slice(0, 2) !== "$$") console.warn(`<Contact> was created with unknown prop '${key}'`);
     	});
 
-    	$$self.$capture_state = () => ({ linkToggle, displayLinks });
+    	$$self.$$set = $$props => {
+    		if ("makeSmall" in $$props) $$invalidate(0, makeSmall = $$props.makeSmall);
+    	};
+
+    	$$self.$capture_state = () => ({ makeSmall, linkToggle, displayLinks });
 
     	$$self.$inject_state = $$props => {
-    		if ("linkToggle" in $$props) $$invalidate(0, linkToggle = $$props.linkToggle);
+    		if ("makeSmall" in $$props) $$invalidate(0, makeSmall = $$props.makeSmall);
+    		if ("linkToggle" in $$props) $$invalidate(1, linkToggle = $$props.linkToggle);
     	};
 
     	if ($$props && "$$inject" in $$props) {
     		$$self.$inject_state($$props.$$inject);
     	}
 
-    	return [linkToggle, displayLinks];
+    	return [makeSmall, linkToggle, displayLinks];
     }
 
     class Contact extends SvelteComponentDev {
     	constructor(options) {
     		super(options);
-    		init(this, options, instance$3, create_fragment$3, safe_not_equal, {});
+    		init(this, options, instance$3, create_fragment$3, safe_not_equal, { makeSmall: 0 });
 
     		dispatch_dev("SvelteRegisterComponent", {
     			component: this,
@@ -1447,6 +1461,21 @@ var app = (function () {
     			options,
     			id: create_fragment$3.name
     		});
+
+    		const { ctx } = this.$$;
+    		const props = options.props || {};
+
+    		if (/*makeSmall*/ ctx[0] === undefined && !("makeSmall" in props)) {
+    			console.warn("<Contact> was created without expected prop 'makeSmall'");
+    		}
+    	}
+
+    	get makeSmall() {
+    		throw new Error("<Contact>: Props cannot be read directly from the component instance unless compiling with 'accessors: true' or '<svelte:options accessors/>'");
+    	}
+
+    	set makeSmall(value) {
+    		throw new Error("<Contact>: Props cannot be set directly on the component instance unless compiling with 'accessors: true' or '<svelte:options accessors/>'");
     	}
     }
 
@@ -1467,13 +1496,13 @@ var app = (function () {
     			h3 = element("h3");
     			h3.textContent = "Projects";
     			attr_dev(h3, "id", "projectsLink");
-    			attr_dev(h3, "class", "underline svelte-10vmsq8");
-    			add_location(h3, file$4, 21, 9, 587);
+    			attr_dev(h3, "class", "underline svelte-uki92b");
+    			add_location(h3, file$4, 21, 9, 603);
     			attr_dev(button, "role", "navigation");
     			attr_dev(button, "aria-labelledby", "projectsLink");
     			attr_dev(button, "tabindex", "0");
-    			attr_dev(button, "class", "svelte-10vmsq8");
-    			add_location(button, file$4, 16, 6, 429);
+    			attr_dev(button, "class", "svelte-uki92b");
+    			add_location(button, file$4, 16, 6, 445);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, button, anchor);
@@ -1516,13 +1545,13 @@ var app = (function () {
     			h3 = element("h3");
     			h3.textContent = "About";
     			attr_dev(h3, "id", "aboutLink");
-    			attr_dev(h3, "class", "underline svelte-10vmsq8");
-    			add_location(h3, file$4, 13, 9, 335);
+    			attr_dev(h3, "class", "underline svelte-uki92b");
+    			add_location(h3, file$4, 13, 9, 351);
     			attr_dev(button, "role", "navigation");
     			attr_dev(button, "aria-labelledby", "aboutLink");
     			attr_dev(button, "tabindex", "0");
-    			attr_dev(button, "class", "svelte-10vmsq8");
-    			add_location(button, file$4, 8, 6, 183);
+    			attr_dev(button, "class", "svelte-uki92b");
+    			add_location(button, file$4, 8, 6, 199);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, button, anchor);
@@ -1568,7 +1597,8 @@ var app = (function () {
     		c: function create() {
     			div = element("div");
     			if (if_block) if_block.c();
-    			attr_dev(div, "class", div_class_value = "" + (null_to_empty(/*makeSmall*/ ctx[0] ? "links" : "no-links") + " svelte-10vmsq8"));
+    			attr_dev(div, "class", div_class_value = "" + (null_to_empty(/*makeSmall*/ ctx[0] ? "links" : "no-links") + " svelte-uki92b"));
+    			toggle_class(div, "makeSmall", /*makeSmall*/ ctx[0]);
     			add_location(div, file$4, 6, 0, 110);
     		},
     		l: function claim(nodes) {
@@ -1591,8 +1621,12 @@ var app = (function () {
     				}
     			}
 
-    			if (dirty & /*makeSmall*/ 1 && div_class_value !== (div_class_value = "" + (null_to_empty(/*makeSmall*/ ctx[0] ? "links" : "no-links") + " svelte-10vmsq8"))) {
+    			if (dirty & /*makeSmall*/ 1 && div_class_value !== (div_class_value = "" + (null_to_empty(/*makeSmall*/ ctx[0] ? "links" : "no-links") + " svelte-uki92b"))) {
     				attr_dev(div, "class", div_class_value);
+    			}
+
+    			if (dirty & /*makeSmall, makeSmall*/ 1) {
+    				toggle_class(div, "makeSmall", /*makeSmall*/ ctx[0]);
     			}
     		},
     		i: noop,
@@ -1728,7 +1762,7 @@ var app = (function () {
     			attr_dev(section, "name", "projects");
     			attr_dev(section, "id", "second");
     			attr_dev(section, "class", "svelte-19e18ga");
-    			add_location(section, file$5, 50, 8, 1307);
+    			add_location(section, file$5, 50, 8, 1318);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, section, anchor);
@@ -1780,7 +1814,7 @@ var app = (function () {
     			attr_dev(section, "name", "text");
     			attr_dev(section, "id", "first");
     			attr_dev(section, "class", "svelte-19e18ga");
-    			add_location(section, file$5, 46, 8, 1187);
+    			add_location(section, file$5, 46, 8, 1198);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, section, anchor);
@@ -1850,7 +1884,11 @@ var app = (function () {
     			$$inline: true
     		});
 
-    	contact = new Contact({ $$inline: true });
+    	contact = new Contact({
+    			props: { makeSmall: /*makeSmall*/ ctx[0] },
+    			$$inline: true
+    		});
+
     	const if_block_creators = [create_if_block$3, create_if_block_1$1];
     	const if_blocks = [];
 
@@ -1883,7 +1921,7 @@ var app = (function () {
     			add_location(div1, file$5, 40, 4, 1006);
     			attr_dev(main, "class", "content svelte-19e18ga");
     			attr_dev(main, "role", "main");
-    			add_location(main, file$5, 44, 4, 1123);
+    			add_location(main, file$5, 44, 4, 1134);
     			attr_dev(div2, "class", "wrapper svelte-19e18ga");
     			add_location(div2, file$5, 36, 0, 909);
     		},
@@ -1916,6 +1954,9 @@ var app = (function () {
     			if (dirty & /*makeSmall*/ 1) navlinks_changes.makeSmall = /*makeSmall*/ ctx[0];
     			if (dirty & /*setAbout*/ 4) navlinks_changes.setAbout = /*setAbout*/ ctx[2];
     			navlinks.$set(navlinks_changes);
+    			const contact_changes = {};
+    			if (dirty & /*makeSmall*/ 1) contact_changes.makeSmall = /*makeSmall*/ ctx[0];
+    			contact.$set(contact_changes);
     			let previous_block_index = current_block_type_index;
     			current_block_type_index = select_block_type(ctx);
 

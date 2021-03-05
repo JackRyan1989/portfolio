@@ -4,7 +4,7 @@
   export let onClickChangeView = () => {};
 </script>
 
-<div class={makeSmall ? "links" : "no-links"}>
+<div class={makeSmall ? "links" : "no-links"} class:makeSmall>
     {#if !setAbout}
       <button
         role="navigation"
@@ -60,6 +60,10 @@
     transition-duration: 0.25s;
   }
 
+  .makeSmall {
+    animation: fadeIn 1s;
+  }
+
   .underline:hover {
     color: white;
   }
@@ -79,6 +83,11 @@
 
   .underline:hover::after {
     height: 1.1em;
+  }
+
+  @keyframes fadeIn {
+    from {opacity: 0;}
+    to {opacity: 1;}
   }
 
   /* Phone Screen Sizing */

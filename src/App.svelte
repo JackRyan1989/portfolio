@@ -40,7 +40,7 @@
   </div>
     <div class="sidebar">
       <Navlinks {makeSmall} {onClickChangeView} {setAbout} />
-      <Contact />
+      <Contact {makeSmall}/>
     </div>
     <main class="content" role="main">
       {#if setAbout}
