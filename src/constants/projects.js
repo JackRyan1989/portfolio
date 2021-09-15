@@ -1,6 +1,24 @@
 const PROJECTS = [
   {
     id: "1",
+    url: "https://drexel.edu/teaching-and-learning/",
+    title: "Drexel University: Teaching and Learning Center",
+    tech: ["HTML5", "CSS3", "JS", "Sitecore CMS"],
+    tasks: "Homepage Redesign, Content Review & some Javascript",
+    image: "/assets/Drexel_horizontal_yellow copy.png",
+    alt: "Drexel University Logo",
+  },
+  {
+    id: "2",
+    url: "http://lumenbanner.com",
+    title: "Lumen Banner",
+    tech: ["HTML5", "CSS3", "JS", "UIKit"],
+    tasks: "Freelance project for Street Media Corp. Built site according to design specs in HTML and CSS, with JS functionality sprinkled in.",
+    image: "/assets/LB_Home_Nav_Logo.png",
+    alt: "Lumen Banner Logo",
+  },
+  {
+    id: "3",
     url: "https://drexel.edu/legacy-center/",
     title: "Drexel University: Legacy Center Archives and Special Collections",
     tech: ["HTML5", "CSS3", "JS", "Sitecore CMS"],
@@ -9,7 +27,7 @@ const PROJECTS = [
     alt: "Drexel University Logo",
   },
   {
-    id: "2",
+    id: "4",
     url: "https://drexel.edu/hunger-free-center/",
     title: "Drexel University: The Center for Hunger Free Communities",
     tech: ["HTML5", "CSS3", "JS", "Sitecore CMS"],
@@ -19,7 +37,7 @@ const PROJECTS = [
     alt: "Drexel University Logo",
   },
   {
-    id: "3",
+    id: "5",
     url: "https://drexel.edu/disability-resources/",
     title: "Drexel University: Disability Resources",
     tech: ["HTML5", "CSS3", "JS", "Sitecore CMS"],
@@ -28,7 +46,7 @@ const PROJECTS = [
     alt: "Drexel University Logo",
   },
   {
-    id: "4",
+    id: "6",
     url: "https://github.com/CodeForPhilly/prevention-point",
     title: "Code for Philly: Prevention Point",
     tech: ["React", "MaterialUI", "MobX", "Django", "Jest", "Yup"],
@@ -38,7 +56,7 @@ const PROJECTS = [
     alt: "Code for Philly Logo",
   },
   {
-    id: "5",
+    id: "7",
     url: "https://github.com/maleszewskid/Project-3",
     title: "Patient First",
     tech: ["React", "Node", "Express", "PassportJS"],
@@ -48,7 +66,7 @@ const PROJECTS = [
     alt: "University of Pennsylvania Logo",
   },
   {
-    id: "5",
+    id: "8",
     url: "https://github.com/JackRyan1989/babyTracker",
     title: "Baby Tracker",
     tech: ["React", "MongoDB Realm", "MaterialUI"],
